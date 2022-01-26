@@ -1,19 +1,35 @@
 {
   "name": "colearn-ui",
+  "description": "colearn app ui kit",
   "version": "1.0.0",
-  "description": "",
+  "author": "Colearn",
+  "license": "ISC",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/colearnclub/colearn-ui#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/colearnclub/colearn-ui.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/colearnclub/colearn-ui/issues"
   },
-  "homepage": "https://github.com/colearnclub/colearn-ui#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}' --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.2",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,scss,ts,tsx}": [
+      "npm run lint"
+    ]
+  }
 }
