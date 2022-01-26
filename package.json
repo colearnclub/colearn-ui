@@ -16,15 +16,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}'",
-    "lint:fix": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}' --fix"
+    "lint:fix": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}' --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@storybook/addon-actions": "^6.4.14",
+    "@storybook/addon-essentials": "^6.4.14",
+    "@storybook/addon-links": "^6.4.14",
+    "@storybook/react": "^6.4.14",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "typescript": "^4.5.5"
   },
   "lint-staged": {
