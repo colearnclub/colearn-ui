@@ -10,6 +10,8 @@
     "tsconfig-base.json",
     "tsconfig-react.json",
     "eslint-preset.js"
-  ]
-
+  ],
+  "dependencies": {
+    "eslint-config-react-app": "^7.0.0"
+  }
 }

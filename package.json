@@ -18,6 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}' --fix",
+    "changeset": "changeset",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
