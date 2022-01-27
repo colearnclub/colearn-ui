@@ -24,7 +24,10 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.16.12",
+    "@chakra-ui/react": "^1.8.1",
     "@changesets/cli": "^2.20.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@storybook/addon-actions": "^6.4.14",
     "@storybook/addon-essentials": "^6.4.14",
     "@storybook/addon-links": "^6.4.14",
@@ -33,6 +36,7 @@
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "framer-motion": "^6.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
@@ -47,6 +51,7 @@
   "workspaces": [
     "packages/*"
   ],
+  "packageManager": "pnpm@6.28.0",
   "lint-staged": {
     "src/**/*.{js,jsx,scss,ts,tsx}": [
       "npm run lint"

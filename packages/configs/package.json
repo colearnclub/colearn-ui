@@ -1,12 +1,15 @@
 {
   "name": "@colearn/configs",
+  "version": "0.0.1",
   "private": true,
   "author": "Colearn",
   "description": "",
   "license": "ISC",
-  "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "files": [
+    "tsconfig-base.json",
+    "tsconfig-react.json",
+    "eslint-preset.js"
+  ]
+
 }
