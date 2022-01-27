@@ -67,7 +67,7 @@
   },
   "packageManager": "pnpm@6.28.0",
   "lint-staged": {
-    "src/**/*.{js,jsx,scss,ts,tsx}": [
+    "packages/**/*.{js,jsx,scss,ts,tsx}": [
       "npm run lint"
     ]
   },
