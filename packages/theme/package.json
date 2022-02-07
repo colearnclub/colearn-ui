@@ -1,6 +1,6 @@
 {
   "name": "@colearn/theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Colean UI Theme",
   "author": "Colearn",
   "license": "ISC",
@@ -16,7 +16,8 @@
   },
   "peerDependencies": {
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "@chakra-ui/react": "^1.8.0"
   },
   "devDependencies": {
     "@colearn/build-utils": "workspace:^0.0.0",
