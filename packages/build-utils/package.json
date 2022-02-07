@@ -1,0 +1,21 @@
+{
+  "name": "@colearn/build-utils",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Colearn",
+  "license": "ISC",
+  "main": "index.js",
+  "files": [
+    "rollup.config.js",
+    "tsconfig.base.json"
+  ],
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup": "^2.67.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.5.5"
+  }
+}

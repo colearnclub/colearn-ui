@@ -1,0 +1,25 @@
+{
+  "name": "@colearn/components",
+  "version": "0.0.1",
+  "description": "olean ui kit",
+  "author": "Colearn",
+  "license": "ISC",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@colearn/build-utils": "workspace:^0.0.0",
+    "rollup": "^2.67.1"
+  }
+}

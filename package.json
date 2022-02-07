@@ -15,60 +15,41 @@
     "url": "https://github.com/colearnclub/colearn-ui/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "eslint 'packages/**/*.{js,jsx,scss,ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}' --fix",
     "changeset": "changeset",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@chakra-ui/react": "^1.8.1",
+    "@babel/core": "^7.17.0",
+    "@chakra-ui/react": "^1.8.3",
     "@changesets/cli": "^2.20.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@storybook/addon-actions": "^6.4.14",
-    "@storybook/addon-essentials": "^6.4.14",
-    "@storybook/addon-links": "^6.4.14",
-    "@storybook/react": "^6.4.14",
-    "babel-loader": "^8.2.3",
-    "eslint": "^8.7.0",
+    "@storybook/addon-actions": "^6.4.18",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/react": "^6.4.18",
+    "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "framer-motion": "^6.2.3",
+    "framer-motion": "^6.2.4",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "turbo": "^1.0.29",
+    "turbo": "^1.1.2",
     "typescript": "^4.5.5"
-  },
-  "turbo": {
-    "baseBranch": "origin/main",
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**"
-        ]
-      },
-      "lint": {
-        "outputs": []
-      },
-      "dev": {
-        "cache": false
-      }
-    }
   },
   "packageManager": "pnpm@6.28.0",
   "lint-staged": {
     "packages/**/*.{js,jsx,scss,ts,tsx}": [
-      "npm run lint"
+      "pnpm run lint"
     ]
   },
   "engines": {
