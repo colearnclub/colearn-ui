@@ -1,7 +1,7 @@
-import { extendTheme } from '@chakra-ui/react';
+import components from './components';
 
-export const appTheme = extendTheme({
-  components: {},
+export const appTheme = {
+  components,
   fonts: {
     body: "'FilsonSoft', sans-serif",
     heading: "'FilsonSoft', sans-serif",
@@ -46,4 +46,4 @@ export const appTheme = extendTheme({
       900: '#27a02e',
     },
   },
-});
+};
