@@ -1,6 +1,8 @@
 import components from './components';
 
-export const appTheme = {
+import { colors, subjectColors, randomColorFromList } from './colorUtils';
+
+const appTheme = {
   components,
   fonts: {
     body: "'FilsonSoft', sans-serif",
@@ -47,3 +49,5 @@ export const appTheme = {
     },
   },
 };
+
+export { colors, subjectColors, randomColorFromList, appTheme };
