@@ -38,7 +38,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "framer-motion": "^6.2.4",
+    "framer-motion": "4.1.17",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
