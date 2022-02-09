@@ -19,17 +19,17 @@ const config = [
       external(),
       nodeResolve(),
       commonjs(),
-      // typescript({ tsconfig: 'tsconfig.json' }),
-      // terser(),
+      typescript({ tsconfig: 'tsconfig.json' }),
+      terser(),
 
-      esbuild({
-        // minify: true,
-        sourceMap: true,
-        jsx: 'transform',
-        jsxFactory: 'React.createElement',
-        jsxFragment: 'React.Fragment',
-        tsconfig: 'tsconfig.json',
-      }),
+      // esbuild({
+      //   // minify: true,
+      //   sourceMap: true,
+      //   jsx: 'transform',
+      //   jsxFactory: 'React.createElement',
+      //   jsxFragment: 'React.Fragment',
+      //   tsconfig: 'tsconfig.json',
+      // }),
     ],
   },
   {
