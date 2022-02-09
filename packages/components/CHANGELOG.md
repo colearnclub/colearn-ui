@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.3.0
+
+### Minor Changes
+
+- 67384c5: back to tsc build
+
 ## 1.2.0
 
 ### Minor Changes
