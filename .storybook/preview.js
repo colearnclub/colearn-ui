@@ -1,5 +1,6 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { appTheme } from '../packages/theme/src';
+import { ColorModeSwitch } from './ColorModeSwitch';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -17,10 +18,11 @@ export const parameters = {
 const theme = extendTheme(appTheme);
 
 export const decorators = [
-  (Story) => {
+  (Story, context) => {
     return (
       <ChakraProvider theme={theme} resetCSS>
-        <Story />
+        <ColorModeSwitch />
+        <Story {...context} />
       </ChakraProvider>
     );
   },

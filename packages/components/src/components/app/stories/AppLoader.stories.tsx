@@ -1,7 +1,7 @@
 import AppLoader from '../AppLoader';
 
 export default {
-  title: 'Pages/AppLoader',
+  title: 'App/AppLoader',
   component: AppLoader,
 };
 

@@ -8,6 +8,8 @@ import LearnerAvatar, {
   LearnerAvatarLabel,
 } from './components/tokens/LearnerAvatar';
 
+import IcontBtn from './components/tokens/IcontBtn';
+
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
 import useDimenstionsObserver from './components/hooks/useDimenstionsObserver';
@@ -51,6 +53,7 @@ export {
   // tokens
   LearnerAvatar,
   LearnerAvatarLabel,
+  IcontBtn,
   // hooks
   useDebouncedValue,
   useDelay,
