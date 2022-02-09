@@ -1,11 +1,9 @@
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
-const dts = require('rollup-plugin-dts').default;
-
 const external = require('rollup-plugin-peer-deps-external');
 const typescript = require('@rollup/plugin-typescript');
 const { terser } = require('rollup-plugin-terser');
-const esbuild = require('rollup-plugin-esbuild').default;
+const dts = require('rollup-plugin-dts').default;
 
 const config = [
   {
@@ -21,15 +19,6 @@ const config = [
       commonjs(),
       typescript({ tsconfig: 'tsconfig.json' }),
       terser(),
-
-      // esbuild({
-      //   // minify: true,
-      //   sourceMap: true,
-      //   jsx: 'transform',
-      //   jsxFactory: 'React.createElement',
-      //   jsxFragment: 'React.Fragment',
-      //   tsconfig: 'tsconfig.json',
-      // }),
     ],
   },
   {
