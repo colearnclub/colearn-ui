@@ -5,7 +5,8 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import/no-anonymous-default-export": "Off"
   },
   "plugins": [
     "prettier"

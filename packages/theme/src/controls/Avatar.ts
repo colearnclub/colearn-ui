@@ -5,6 +5,7 @@ const Avatar = {
       cursor: 'pointer',
       fontWeight: '500',
       borderColor: 'transparent',
+      borderRadius: '100%',
     },
   },
   sizes: {
