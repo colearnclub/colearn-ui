@@ -9,7 +9,10 @@ import useEntitySelect from './components/hooks/useEntitySelect';
 import useInfinitePageScroll from './components/hooks/useInfinitePageScroll';
 import useMatchMedia from './components/hooks/useMatchMedia';
 import usePrevious from './components/hooks/usePrevious';
-import useSyncedState from './components/hooks/useSyncedState';
+import { useErrorToast, useSuccessToast } from './components/hooks/useToasts';
+import useSyncedState, {
+  useOnceSyncedState,
+} from './components/hooks/useSyncedState';
 import {
   whyDidYouUpdate,
   useWhyDidYouUpdate,
@@ -29,6 +32,9 @@ export {
   useMatchMedia,
   usePrevious,
   useSyncedState,
+  useOnceSyncedState,
+  useErrorToast,
+  useSuccessToast,
   whyDidYouUpdate,
   useWhyDidYouUpdate,
 };
