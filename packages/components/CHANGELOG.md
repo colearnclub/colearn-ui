@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.1.1
+
+### Patch Changes
+
+- 97d493f: rebuild
+
 ## 1.1.0
 
 ### Minor Changes
