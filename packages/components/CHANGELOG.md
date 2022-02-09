@@ -1,5 +1,12 @@
 # @colearn/components
 
+## 1.2.0
+
+### Minor Changes
+
+- daa7ae0: test
+- 2f05c64: esbuild test
+
 ## 1.1.1
 
 ### Patch Changes
