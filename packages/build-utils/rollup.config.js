@@ -25,9 +25,7 @@ const config = [
   {
     input: 'src/index.ts',
     output: [{ file: 'dist/index.d.ts', format: 'es' }],
-    external: ['react', 'react-dom', '@chakra-ui/react'],
     plugins: [
-      external(),
       dts({
         compilerOptions: { preserveSymlinks: false, tsconfig: 'tsconfig.json' },
       }),
