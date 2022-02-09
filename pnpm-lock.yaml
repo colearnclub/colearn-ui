@@ -77,10 +77,12 @@ importers:
       '@chakra-ui/react': ^1.8.3
       '@colearn/build-utils': workspace:^0.0.0
       rollup: ^2.67.1
+      tslib: ^2.3.1
     devDependencies:
       '@chakra-ui/react': 1.8.3_542c08622780498f8914b90af3507b5e
       '@colearn/build-utils': link:../build-utils
       rollup: 2.67.1
+      tslib: 2.3.1
 
   packages/theme:
     specifiers:

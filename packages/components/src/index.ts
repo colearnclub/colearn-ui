@@ -6,10 +6,23 @@ import useDimenstionsObserver from './components/hooks/useDimenstionsObserver';
 import useDocumentTitle from './components/hooks/useDocumentTitle';
 import useEntitiesMap from './components/hooks/useEntitiesMap';
 import useEntitySelect from './components/hooks/useEntitySelect';
+import useHorizonralScrollAnimation from './components/hooks/useHorizonralScrollAnimation';
 import useInfinitePageScroll from './components/hooks/useInfinitePageScroll';
 import useMatchMedia from './components/hooks/useMatchMedia';
 import usePrevious from './components/hooks/usePrevious';
 import { useErrorToast, useSuccessToast } from './components/hooks/useToasts';
+import deferComponentRender from './components/hooks/deferComponentRender';
+import { randomColorFromList, colors, subjectColors } from './utils/colorUtils';
+
+import {
+  linear as linearAnim,
+  ease as easeAnim,
+  easeIn as easeInAnim,
+  easeOut as easeOutAnim,
+  easeInOut as easeInOutAnim,
+  cubicBezier as cubicBezierAnim,
+} from './animation/bezier';
+
 import useSyncedState, {
   useOnceSyncedState,
 } from './components/hooks/useSyncedState';
@@ -28,6 +41,7 @@ export {
   useDocumentTitle,
   useEntitiesMap,
   useEntitySelect,
+  useHorizonralScrollAnimation,
   useInfinitePageScroll,
   useMatchMedia,
   usePrevious,
@@ -36,5 +50,17 @@ export {
   useErrorToast,
   useSuccessToast,
   whyDidYouUpdate,
+  //hoks
   useWhyDidYouUpdate,
+  deferComponentRender,
+  //utils
+  randomColorFromList,
+  colors,
+  subjectColors,
+  linearAnim,
+  easeAnim,
+  easeInAnim,
+  easeOutAnim,
+  easeInOutAnim,
+  cubicBezierAnim,
 };

@@ -1,7 +1,5 @@
 import components from './components';
 
-import { colors, subjectColors, randomColorFromList } from './colorUtils';
-
 const appTheme = {
   components,
   fonts: {
@@ -50,4 +48,4 @@ const appTheme = {
   },
 };
 
-export { colors, subjectColors, randomColorFromList, appTheme };
+export { appTheme };
