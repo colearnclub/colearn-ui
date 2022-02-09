@@ -1,6 +1,8 @@
 import AppLoader from './components/app/AppLoader';
+import NotFoundPage from './components/app/NotFoundPage';
 
 import InfinitListContainer from './components/containers/InfinitListContainer';
+import { Modal, ModalClose, ModalPrimary } from './components/containers/Modal';
 
 import LearnerAvatar, {
   LearnerAvatarLabel,
@@ -40,8 +42,12 @@ import {
 export {
   // app
   AppLoader,
+  NotFoundPage,
   // containers
   InfinitListContainer,
+  Modal,
+  ModalClose,
+  ModalPrimary,
   // tokens
   LearnerAvatar,
   LearnerAvatarLabel,

@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.8.0
+
+### Minor Changes
+
+- modals and other
+
 ## 1.7.0
 
 ### Minor Changes
