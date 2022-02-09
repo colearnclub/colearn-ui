@@ -1,5 +1,11 @@
 import AppLoader from './components/app/AppLoader';
 
+import InfinitListContainer from './components/containers/InfinitListContainer';
+
+import LearnerAvatar, {
+  LearnerAvatarLabel,
+} from './components/tokens/LearnerAvatar';
+
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
 import useDimenstionsObserver from './components/hooks/useDimenstionsObserver';
@@ -34,6 +40,11 @@ import {
 export {
   // app
   AppLoader,
+  // containers
+  InfinitListContainer,
+  // tokens
+  LearnerAvatar,
+  LearnerAvatarLabel,
   // hooks
   useDebouncedValue,
   useDelay,

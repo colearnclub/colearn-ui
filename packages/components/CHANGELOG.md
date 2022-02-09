@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.7.0
+
+### Minor Changes
+
+- new componnets
+
 ## 1.6.0
 
 ### Minor Changes
