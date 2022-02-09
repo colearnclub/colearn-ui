@@ -11,10 +11,7 @@ function getAvatarBackground(src?: string, name?: string): string {
   if (src) {
     return 'transparent';
   }
-  if (name) {
-    return randomColorFromList(name, colors);
-  }
-  return 'transparent';
+  return name ? randomColorFromList(name, colors) : 'transparent';
 }
 
 export default function LearnerAvatar({

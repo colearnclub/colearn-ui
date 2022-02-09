@@ -1,5 +1,17 @@
 # @colearn/components
 
+## 1.6.0
+
+### Minor Changes
+
+- release packages
+
+## 1.5.0
+
+### Minor Changes
+
+- new deps
+
 ## 1.4.0
 
 ### Minor Changes
