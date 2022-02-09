@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 1.3.1
+
+### Patch Changes
+
+- minro fixes
+
 ## 1.3.0
 
 ### Minor Changes
