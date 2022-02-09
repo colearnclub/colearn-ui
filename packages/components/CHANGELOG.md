@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.9.0
+
+### Minor Changes
+
+- appbar
+
 ## 1.8.0
 
 ### Minor Changes

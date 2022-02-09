@@ -4,6 +4,8 @@ import NotFoundPage from './components/app/NotFoundPage';
 import InfinitListContainer from './components/containers/InfinitListContainer';
 import { Modal, ModalClose, ModalPrimary } from './components/containers/Modal';
 
+import * as Appbar from './components/app/Appbar';
+
 import LearnerAvatar, {
   LearnerAvatarLabel,
 } from './components/tokens/LearnerAvatar';
@@ -43,6 +45,7 @@ import {
 
 export {
   // app
+  Appbar,
   AppLoader,
   NotFoundPage,
   // containers
