@@ -28,7 +28,7 @@ const config = [
       commonjs(),
       svgr({ typescript: true }),
       typescript({ tsconfig: 'tsconfig.json' }),
-      // terser(),
+      terser(),
     ],
   },
   {
