@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.15.0
+
+### Minor Changes
+
+- loading and grid for resources
+
 ## 1.14.0
 
 ### Minor Changes

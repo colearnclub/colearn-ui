@@ -14,6 +14,8 @@ import {
 } from './components/tokens/LearnerAvatar';
 import { LearnerTabLink, LearnerTab } from './components/tokens/LearnerTab';
 import * as ResourceCard from './components/tokens/ResourceCard';
+import * as ResourceLoading from './components/tokens/ResourceCardLoading';
+import ResourcesGrid from './components/tokens/ResourcesGrid';
 import LearnerDropdown from './components/tokens/LearnerDropdown';
 
 import * as MultiProgress from './components/common/MultiProgressBar';
@@ -69,6 +71,8 @@ export {
   ModalPrimary,
   // tokens
   ResourceCard,
+  ResourcesGrid,
+  ResourceLoading,
   LearnerAvatar,
   LearnerAvatarLabel,
   LearnerTab,
