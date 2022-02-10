@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.16.0
+
+### Minor Changes
+
+- page size
+
 ## 1.15.0
 
 ### Minor Changes

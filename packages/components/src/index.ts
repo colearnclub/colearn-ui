@@ -15,7 +15,9 @@ import {
 import { LearnerTabLink, LearnerTab } from './components/tokens/LearnerTab';
 import * as ResourceCard from './components/tokens/ResourceCard';
 import * as ResourceLoading from './components/tokens/ResourceCardLoading';
-import ResourcesGrid from './components/tokens/ResourcesGrid';
+import ResourcesGrid, {
+  DEFAULT_PAGE_SIZE,
+} from './components/tokens/ResourcesGrid';
 import LearnerDropdown from './components/tokens/LearnerDropdown';
 
 import * as MultiProgress from './components/common/MultiProgressBar';
@@ -72,6 +74,7 @@ export {
   // tokens
   ResourceCard,
   ResourcesGrid,
+  DEFAULT_PAGE_SIZE,
   ResourceLoading,
   LearnerAvatar,
   LearnerAvatarLabel,
