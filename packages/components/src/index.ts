@@ -20,6 +20,8 @@ import Tag from './components/tokens/Tag';
 
 import { NavLink, NavLinks } from './components/tokens/NavLinks';
 
+import SingleDateSelect from './components/common/SingleDateSelect';
+
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
 import useDimenstionsObserver from './components/hooks/useDimenstionsObserver';
@@ -70,6 +72,7 @@ export {
   LearnerAvatarLabel,
   LearnerTab,
   LearnerTabLink,
+  SingleDateSelect,
   IcontBtn,
   MultiProgress,
   NavLink,
