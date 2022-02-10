@@ -4,6 +4,7 @@ const external = require('rollup-plugin-peer-deps-external');
 const typescript = require('@rollup/plugin-typescript');
 const { terser } = require('rollup-plugin-terser');
 const dts = require('rollup-plugin-dts').default;
+const svgr = require('@svgr/rollup');
 
 const config = [
   {
@@ -17,6 +18,7 @@ const config = [
       external(),
       nodeResolve(),
       commonjs(),
+      svgr(),
       typescript({ tsconfig: 'tsconfig.json' }),
       terser(),
     ],

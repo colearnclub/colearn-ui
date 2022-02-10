@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.10.0
+
+### Minor Changes
+
+- new components: sidebar, multiprogres, tag, router hooks
+
 ## 1.9.0
 
 ### Minor Changes

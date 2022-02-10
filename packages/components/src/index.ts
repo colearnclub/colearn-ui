@@ -6,6 +6,7 @@ import { Modal, ModalClose, ModalPrimary } from './components/containers/Modal';
 
 import * as Appbar from './components/app/Appbar';
 import * as Sidebar from './components/app/Sidebar';
+import * as MultiProgress from './components/tokens/MultiProgressBar';
 
 import {
   LearnerAvatar,
@@ -14,6 +15,7 @@ import {
 import { LearnerTabLink, LearnerTab } from './components/tokens/LearnerTab';
 
 import IcontBtn from './components/tokens/IcontBtn';
+import Tag from './components/tokens/Tag';
 
 import { NavLink, NavLinks } from './components/tokens/NavLinks';
 
@@ -27,6 +29,8 @@ import useHorizonralScrollAnimation from './components/hooks/useHorizonralScroll
 import useInfinitePageScroll from './components/hooks/useInfinitePageScroll';
 import useMatchMedia from './components/hooks/useMatchMedia';
 import usePrevious from './components/hooks/usePrevious';
+import useQueryParams from './components/hooks/useQueryParams';
+import useScrollTop from './components/hooks/useScrollTop';
 import { useErrorToast, useSuccessToast } from './components/hooks/useToasts';
 import deferComponentRender from './components/hooks/deferComponentRender';
 import { randomColorFromList, colors, subjectColors } from './utils/colorUtils';
@@ -65,8 +69,10 @@ export {
   LearnerTab,
   LearnerTabLink,
   IcontBtn,
+  MultiProgress,
   NavLink,
   NavLinks,
+  Tag,
   // hooks
   useDebouncedValue,
   useDelay,
@@ -78,12 +84,14 @@ export {
   useInfinitePageScroll,
   useMatchMedia,
   usePrevious,
+  useQueryParams,
+  useScrollTop,
   useSyncedState,
   useOnceSyncedState,
   useErrorToast,
   useSuccessToast,
   whyDidYouUpdate,
-  //hoks
+  //hoc's
   useWhyDidYouUpdate,
   deferComponentRender,
   //utils
