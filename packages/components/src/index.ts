@@ -5,6 +5,7 @@ import InfinitListContainer from './components/containers/InfinitListContainer';
 import { Modal, ModalClose, ModalPrimary } from './components/containers/Modal';
 
 import * as Appbar from './components/app/Appbar';
+import * as Page from './components/app/Page';
 import * as Sidebar from './components/app/Sidebar';
 import * as MultiProgress from './components/tokens/MultiProgressBar';
 
@@ -58,6 +59,7 @@ export {
   Sidebar,
   AppLoader,
   NotFoundPage,
+  Page,
   // containers
   InfinitListContainer,
   Modal,
