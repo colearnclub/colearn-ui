@@ -3,6 +3,6 @@
   "compilerOptions": {
     "rootDir": "./src",
   },
-  "include": ["src"],
+  "include": ["src", "stories"],
   "exclude": ["dist", "node_modules"]
 }

@@ -1,4 +1,4 @@
-import NotFoundPage from '../NotFoundPage';
+import NotFoundPage from '../src/components/app/NotFoundPage';
 
 export default {
   title: 'App/NotFoundPage',

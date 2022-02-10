@@ -1,4 +1,4 @@
-import LearnerAvatar from '../LearnerAvatar';
+import { LearnerAvatar } from '../src/components/tokens/LearnerAvatar';
 
 export default {
   title: 'Tokens/LearnerAvatar',

@@ -9,19 +9,27 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
+    "src",
     "README.md"
   ],
   "scripts": {
     "build": "rollup -c"
   },
   "peerDependencies": {
-    "@chakra-ui/react": "^1.8.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "@chakra-ui/react": ">=1.8",
+    "react": ">=17",
+    "react-dom": ">=17",
+    "react-router-dom": ">=6"
+  },
+  "peerDependenciesMeta": {
+    "react-router-dom" :{
+      "optional": true
+    }
   },
   "devDependencies": {
     "@chakra-ui/react": "^1.8.3",
     "@colearn/build-utils": "workspace:^0.0.0",
+    "react-router-dom": "^6.2.1",
     "rollup": "^2.67.1",
     "tslib": "^2.3.1"
   }

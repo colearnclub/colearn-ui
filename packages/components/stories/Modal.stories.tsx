@@ -7,7 +7,11 @@ import {
   ModalHeader,
   useDisclosure,
 } from '@chakra-ui/react';
-import { ModalClose, Modal, ModalPrimary } from '../Modal';
+import {
+  ModalClose,
+  Modal,
+  ModalPrimary,
+} from '../src/components/containers/Modal';
 
 export default {
   title: 'Containers / Modal',

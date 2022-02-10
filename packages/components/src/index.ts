@@ -5,12 +5,17 @@ import InfinitListContainer from './components/containers/InfinitListContainer';
 import { Modal, ModalClose, ModalPrimary } from './components/containers/Modal';
 
 import * as Appbar from './components/app/Appbar';
+import * as Sidebar from './components/app/Sidebar';
 
-import LearnerAvatar, {
+import {
+  LearnerAvatar,
   LearnerAvatarLabel,
 } from './components/tokens/LearnerAvatar';
+import { LearnerTabLink, LearnerTab } from './components/tokens/LearnerTab';
 
 import IcontBtn from './components/tokens/IcontBtn';
+
+import { NavLink, NavLinks } from './components/tokens/NavLinks';
 
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
@@ -46,6 +51,7 @@ import {
 export {
   // app
   Appbar,
+  Sidebar,
   AppLoader,
   NotFoundPage,
   // containers
@@ -56,7 +62,11 @@ export {
   // tokens
   LearnerAvatar,
   LearnerAvatarLabel,
+  LearnerTab,
+  LearnerTabLink,
   IcontBtn,
+  NavLink,
+  NavLinks,
   // hooks
   useDebouncedValue,
   useDelay,

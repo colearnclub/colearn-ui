@@ -1,5 +1,5 @@
 import { Avatar, Box } from '@chakra-ui/react';
-import * as Appbar from '../Appbar';
+import * as Appbar from '../src/components/app/Appbar';
 
 export default {
   title: 'App/Appbar',

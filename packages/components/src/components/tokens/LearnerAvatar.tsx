@@ -14,13 +14,7 @@ function getAvatarBackground(src?: string, name?: string): string {
   return name ? randomColorFromList(name, colors) : 'transparent';
 }
 
-export default function LearnerAvatar({
-  name,
-  src,
-  bg,
-  learner,
-  ...props
-}: Props) {
+export function LearnerAvatar({ name, src, bg, learner, ...props }: Props) {
   const name_ = learner?.name ?? name;
   const src_ = learner?.attributes?.avatar ?? src ?? undefined;
   return (
