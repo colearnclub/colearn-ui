@@ -96,6 +96,22 @@ importers:
       rollup: 2.67.1
       tslib: 2.3.1
 
+  packages/image-kit:
+    specifiers:
+      '@chakra-ui/react': ^1.8.3
+      '@colearn/build-utils': workspace:^0.0.0
+      imagekit-javascript: ^1.4.3
+      nanoid: ^3.2.0
+      rollup: ^2.67.1
+      tslib: ^2.3.1
+    devDependencies:
+      '@chakra-ui/react': 1.8.3_542c08622780498f8914b90af3507b5e
+      '@colearn/build-utils': link:../build-utils
+      imagekit-javascript: 1.4.3
+      nanoid: 3.2.0
+      rollup: 2.67.1
+      tslib: 2.3.1
+
   packages/theme:
     specifiers:
       '@colearn/build-utils': workspace:^0.0.0
@@ -2493,6 +2509,7 @@ packages:
 
   /@emotion/is-prop-valid/0.8.8:
     resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
+    requiresBuild: true
     dependencies:
       '@emotion/memoize': 0.7.4
     dev: true
@@ -8735,6 +8752,10 @@ packages:
   /ignore/5.2.0:
     resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
     engines: {node: '>= 4'}
+    dev: true
+
+  /imagekit-javascript/1.4.3:
+    resolution: {integrity: sha512-2582LzgGl2x0LghhhCXt6xNAss/Rkih1ABbC/eFLgEo2rRq6+LMna/OZyy39wL7t7wW06kxxAGRahX9uE+qfuQ==}
     dev: true
 
   /import-fresh/3.3.0:

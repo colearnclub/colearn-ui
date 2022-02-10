@@ -1,7 +1,7 @@
 {
-  "name": "@colearn/components",
-  "version": "1.12.0",
-  "description": "Colearn UI Kit: Components",
+  "name": "@colearn/image-kit",
+  "version": "1.1.0",
+  "description": "Colearn UI Kit: Image Kit",
   "author": "Colearn",
   "license": "ISC",
   "main": "dist/index.cjs.js",
@@ -19,17 +19,14 @@
     "@chakra-ui/react": ">=1.8",
     "react": ">=17",
     "react-dom": ">=17",
-    "react-router-dom": ">=6"
-  },
-  "peerDependenciesMeta": {
-    "react-router-dom": {
-      "optional": true
-    }
+    "nanoid": ">=3.2",
+    "imagekit-javascript": ">=1.4"
   },
   "devDependencies": {
     "@chakra-ui/react": "^1.8.3",
     "@colearn/build-utils": "workspace:^0.0.0",
-    "react-router-dom": "^6.2.1",
+    "imagekit-javascript": "^1.4.3",
+    "nanoid": "^3.2.0",
     "rollup": "^2.67.1",
     "tslib": "^2.3.1"
   }

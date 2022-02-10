@@ -1,0 +1,8 @@
+{
+  "extends": "@colearn/build-utils/tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+  },
+  "include": ["src", "stories"],
+  "exclude": ["dist", "node_modules"]
+}

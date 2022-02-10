@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.12.0
+
+### Minor Changes
+
+- image-kit
+
 ## 1.11.0
 
 ### Minor Changes
