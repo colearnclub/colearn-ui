@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.14.0
+
+### Minor Changes
+
+- resourcecard
+
 ## 1.13.0
 
 ### Minor Changes

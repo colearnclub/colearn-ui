@@ -1,5 +1,11 @@
 # @colearn/image-kit
 
+## 1.3.0
+
+### Minor Changes
+
+- resourcecard
+
 ## 1.2.0
 
 ### Minor Changes

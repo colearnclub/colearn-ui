@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import { Link as RNavLink, useMatch } from 'react-router-dom';
-import { ChakraProps } from '@chakra-ui/react';
 
 import {
+  ChakraProps,
   Box,
   BoxProps,
   chakra,

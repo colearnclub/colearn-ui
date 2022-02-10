@@ -7,7 +7,7 @@ import {
   ButtonProps,
   Tooltip,
 } from '@chakra-ui/react';
-import IcontBtn from '../tokens/IcontBtn';
+import IcontBtn from '../common/IcontBtn';
 
 export function Container(props: BoxProps) {
   return (

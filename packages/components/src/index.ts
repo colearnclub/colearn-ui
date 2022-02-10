@@ -7,20 +7,20 @@ import { Modal, ModalClose, ModalPrimary } from './components/containers/Modal';
 import * as Appbar from './components/app/Appbar';
 import * as Page from './components/app/Page';
 import * as Sidebar from './components/app/Sidebar';
-import * as MultiProgress from './components/tokens/MultiProgressBar';
 
 import {
   LearnerAvatar,
   LearnerAvatarLabel,
 } from './components/tokens/LearnerAvatar';
 import { LearnerTabLink, LearnerTab } from './components/tokens/LearnerTab';
+import * as ResourceCard from './components/tokens/ResourceCard';
+import LearnerDropdown from './components/tokens/LearnerDropdown';
 
-import IcontBtn from './components/tokens/IcontBtn';
-import Tag from './components/tokens/Tag';
-
-import { NavLink, NavLinks } from './components/tokens/NavLinks';
-
-import SingleDateSelect from './components/common/SingleDateSelect';
+import * as MultiProgress from './components/common/MultiProgressBar';
+import Tag from './components/common/Tag';
+import IcontBtn from './components/common/IcontBtn';
+import { NavLink, NavLinks } from './components/common/NavLinks';
+import DateSelect from './components/common/DateSelect';
 
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
@@ -68,11 +68,14 @@ export {
   ModalClose,
   ModalPrimary,
   // tokens
+  ResourceCard,
   LearnerAvatar,
   LearnerAvatarLabel,
   LearnerTab,
   LearnerTabLink,
-  SingleDateSelect,
+  LearnerDropdown,
+  // common
+  DateSelect,
   IcontBtn,
   MultiProgress,
   NavLink,

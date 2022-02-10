@@ -7,6 +7,8 @@ import { IKConext, useImageKit, ImageKitProvider } from './components/ImageKit';
 import useImageUplaod, { ImageUplpoadDirs } from './components/useImageUplaod';
 import { getResourceImg, type ResourceImgSize } from './getResourceImg';
 
+import { ResourceCardImage } from './components/ResoureCardImage';
+
 export {
   ImgKitClient,
   getResourceImg,
@@ -18,4 +20,5 @@ export {
   ImageKitProvider,
   ImageUplpoadDirs,
   useImageUplaod,
+  ResourceCardImage,
 };

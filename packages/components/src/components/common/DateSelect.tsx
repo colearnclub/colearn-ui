@@ -28,7 +28,7 @@ type Props = Omit<InputGroupProps, 'onChange'> & {
   onChange: (date?: Date) => void;
 };
 
-export default function SingleDateSelect({
+export default function DateSelect({
   value,
   onChange,
   disabledMatchers,
