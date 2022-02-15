@@ -45,6 +45,12 @@ const ResourceCard = {
       boxSizing: 'border-box',
       borderTop: '1px solid #ececec',
     },
+    tags: {
+      '> *': {
+        mr: '0.5rem',
+        mt: '0.5rem',
+      },
+    },
     image: {
       width: '100%',
       objectFit: 'cover',

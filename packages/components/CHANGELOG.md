@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.20.0
+
+### Minor Changes
+
+- tags
+
 ## 1.19.0
 
 ### Minor Changes

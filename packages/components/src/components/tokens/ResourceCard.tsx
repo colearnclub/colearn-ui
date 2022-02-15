@@ -61,3 +61,8 @@ export function Actions(props: FlexProps) {
   const styles = useStyles();
   return <Box __css={styles.actions} {...props} />;
 }
+
+export function Tags(props: BoxProps) {
+  const styles = useStyles();
+  return <Box __css={styles.tags} {...props} />;
+}
