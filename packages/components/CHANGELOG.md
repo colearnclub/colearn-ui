@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.18.0
+
+### Minor Changes
+
+- fix exports
+
 ## 1.17.0
 
 ### Minor Changes

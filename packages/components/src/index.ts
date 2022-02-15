@@ -30,6 +30,8 @@ import {
   type AutocompleteTagsBaseProps,
   AutocompleteTagsLocal,
   type AutocompleteTagsLocalProps,
+  type SuggestionType,
+  getAutocompleteA11yProps,
 } from './components/common/Autocomplete';
 
 import useDebouncedValue from './components/hooks/useDebouncedValue';
@@ -98,6 +100,8 @@ export {
   type AutocompleteTagsBaseProps,
   AutocompleteTagsLocal,
   type AutocompleteTagsLocalProps,
+  type SuggestionType,
+  getAutocompleteA11yProps,
   // hooks
   useDebouncedValue,
   useDelay,
