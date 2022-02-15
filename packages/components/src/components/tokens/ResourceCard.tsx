@@ -6,6 +6,7 @@ import {
   useMultiStyleConfig,
   StylesProvider,
   useStyles,
+  chakra,
 } from '@chakra-ui/react';
 
 import { Maybe } from '../types';
@@ -62,7 +63,11 @@ export function Actions(props: FlexProps) {
   return <Box __css={styles.actions} {...props} />;
 }
 
-export function Tags(props: BoxProps) {
-  const styles = useStyles();
-  return <Box __css={styles.tags} {...props} />;
-}
+export const Tags = chakra(Box, {
+  baseStyle: {
+    '> *': {
+      mr: '0.5rem',
+      mt: '0.5rem',
+    },
+  },
+});
