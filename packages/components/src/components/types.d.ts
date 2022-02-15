@@ -1,5 +1,26 @@
 export type Maybe<T> = T | null;
 
+export enum CategoryType {
+  About = 'about',
+  Academy = 'academy',
+  AccomodationZone = 'accomodationZone',
+  Age = 'age',
+  AptitudeZone = 'aptitudeZone',
+  Connect = 'connect',
+  DirectionZone = 'directionZone',
+  GeniusZone = 'geniusZone',
+  Grade = 'grade',
+  HookZone = 'hookZone',
+  IndependenceZone = 'independenceZone',
+  Location = 'location',
+  PassionZone = 'passionZone',
+  PersistenceZone = 'persistenceZone',
+  PresenceZone = 'presenceZone',
+  Recommendation = 'recommendation',
+  Strategies = 'strategies',
+  TogethernessZone = 'togethernessZone',
+}
+
 export type PageCursor = {
   after?: Maybe<string>;
   first?: Maybe<number>;

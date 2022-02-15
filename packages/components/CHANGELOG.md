@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.17.0
+
+### Minor Changes
+
+- tagsautocmplete
+
 ## 1.16.0
 
 ### Minor Changes

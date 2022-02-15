@@ -3,7 +3,7 @@ import DateSelect from '../src/components/common/DateSelect';
 import '../styles/calendar.css';
 
 export default {
-  title: 'Comnon/DateSelect',
+  title: 'Common/DateSelect',
   component: DateSelect,
 };
 

@@ -25,6 +25,12 @@ import Tag from './components/common/Tag';
 import IcontBtn from './components/common/IcontBtn';
 import { NavLink, NavLinks } from './components/common/NavLinks';
 import DateSelect from './components/common/DateSelect';
+import {
+  AutocompleteTagsBase,
+  type AutocompleteTagsBaseProps,
+  AutocompleteTagsLocal,
+  type AutocompleteTagsLocalProps,
+} from './components/common/Autocomplete';
 
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
@@ -88,6 +94,10 @@ export {
   NavLink,
   NavLinks,
   Tag,
+  AutocompleteTagsBase,
+  type AutocompleteTagsBaseProps,
+  AutocompleteTagsLocal,
+  type AutocompleteTagsLocalProps,
   // hooks
   useDebouncedValue,
   useDelay,
