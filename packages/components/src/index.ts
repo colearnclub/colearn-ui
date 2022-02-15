@@ -33,6 +33,7 @@ import {
   type SuggestionType,
   getAutocompleteA11yProps,
 } from './components/common/Autocomplete';
+import TagsList from './components/common/TagsList';
 
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
@@ -95,6 +96,7 @@ export {
   MultiProgress,
   NavLink,
   NavLinks,
+  TagsList,
   Tag,
   AutocompleteTagsBase,
   type AutocompleteTagsBaseProps,

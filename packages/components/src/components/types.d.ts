@@ -33,8 +33,8 @@ export type PageCursorInfo = {
 };
 
 export type PageOffset = {
-  first?: InputMaybe<number>;
-  offset?: InputMaybe<number>;
+  first?: Maybe<number>;
+  offset?: Maybe<number>;
 };
 
 export type PageOffsetInfo = {
@@ -57,4 +57,13 @@ export type Learner = {
   name: string;
   userId?: Maybe<string>;
   attributes?: Maybe<LearnerAttributes>;
+};
+
+export type Tag = {
+  __typename?: 'Tag';
+  ancestorLabels?: Maybe<Maybe<string>[]>;
+  category?: Maybe<CategoryType>;
+  id: string;
+  name: string;
+  visible?: Maybe<boolean>;
 };
