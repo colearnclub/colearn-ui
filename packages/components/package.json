@@ -1,6 +1,6 @@
 {
   "name": "@colearn/components",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "Colearn UI Kit: Components",
   "author": "Colearn",
   "license": "ISC",
@@ -19,7 +19,6 @@
   "peerDependencies": {
     "@chakra-ui/react": ">=1.8",
     "@chakra-ui/icons": ">=1",
-    "date-fns": ">=2",
     "react": ">=17",
     "react-day-picker": ">=8",
     "react-dom": ">=17",
@@ -37,7 +36,6 @@
     "@chakra-ui/icons": "^1.1.5",
     "@chakra-ui/react": "^1.8.3",
     "@colearn/build-utils": "workspace:^0.0.0",
-    "date-fns": "^2.28.0",
     "react-day-picker": "^8.0.0-beta.38",
     "react-router-dom": "^6.2.1",
     "rollup": "^2.67.1",

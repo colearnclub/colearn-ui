@@ -1,5 +1,11 @@
 # @colearn/image-kit
 
+## 1.4.0
+
+### Minor Changes
+
+- imageupload component
+
 ## 1.3.0
 
 ### Minor Changes

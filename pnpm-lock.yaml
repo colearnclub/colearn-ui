@@ -95,7 +95,6 @@ importers:
       '@chakra-ui/icons': ^1.1.5
       '@chakra-ui/react': ^1.8.3
       '@colearn/build-utils': workspace:^0.0.0
-      date-fns: ^2.28.0
       react-day-picker: ^8.0.0-beta.38
       react-router-dom: ^6.2.1
       rollup: ^2.67.1
@@ -104,7 +103,6 @@ importers:
       '@chakra-ui/icons': 1.1.5_d5de66fc214059f645050e36d066c00a
       '@chakra-ui/react': 1.8.3_542c08622780498f8914b90af3507b5e
       '@colearn/build-utils': link:../build-utils
-      date-fns: 2.28.0
       react-day-picker: 8.0.0-beta.38_4781667a0ce088dd5680677bceac5559
       react-router-dom: 6.2.1_react-dom@17.0.2+react@17.0.2
       rollup: 2.67.1
@@ -112,17 +110,21 @@ importers:
 
   packages/image-kit:
     specifiers:
+      '@chakra-ui/icons': ^1.1.5
       '@chakra-ui/react': ^1.8.3
       '@colearn/build-utils': workspace:^0.0.0
       imagekit-javascript: ^1.4.3
       nanoid: ^3.2.0
+      react-dropzone: ^12.0.4
       rollup: ^2.67.1
       tslib: ^2.3.1
     devDependencies:
+      '@chakra-ui/icons': 1.1.5_d5de66fc214059f645050e36d066c00a
       '@chakra-ui/react': 1.8.3_542c08622780498f8914b90af3507b5e
       '@colearn/build-utils': link:../build-utils
       imagekit-javascript: 1.4.3
       nanoid: 3.2.0
+      react-dropzone: 12.0.4_react@17.0.2
       rollup: 2.67.1
       tslib: 2.3.1
 
@@ -5745,6 +5747,11 @@ packages:
     hasBin: true
     dev: true
 
+  /attr-accept/2.2.2:
+    resolution: {integrity: sha512-7prDjvt9HmqiZ0cl5CRjtS84sEyhsHP2coDkaZKRKVfCDo9s7iw7ChVmar78Gu9pC4SoR/28wFu/G5JJhTnqEg==}
+    engines: {node: '>=4'}
+    dev: true
+
   /autoprefixer/9.8.8:
     resolution: {integrity: sha512-eM9d/swFopRt5gdJ7jrpCwgvEMIayITpojhkkSMRsFHYuH5bkSQ4p/9qTEHtmNudUZh22Tehu7I6CxAW0IXTKA==}
     hasBin: true
@@ -8102,6 +8109,13 @@ packages:
       loader-utils: 2.0.2
       schema-utils: 3.1.1
       webpack: 4.46.0
+    dev: true
+
+  /file-selector/0.4.0:
+    resolution: {integrity: sha512-iACCiXeMYOvZqlF1kTiYINzgepRBymz1wwjiuup9u9nayhb6g4fSwiyJ/6adli+EPwrWtpgQAh2PoS7HukEGEg==}
+    engines: {node: '>= 10'}
+    dependencies:
+      tslib: 2.3.1
     dev: true
 
   /file-system-cache/1.0.5:
@@ -11460,6 +11474,18 @@ packages:
       object-assign: 4.1.1
       react: 17.0.2
       scheduler: 0.20.2
+    dev: true
+
+  /react-dropzone/12.0.4_react@17.0.2:
+    resolution: {integrity: sha512-fcqHEYe1MzAghU6/Hz86lHDlBNsA+lO48nAcm7/wA+kIzwS6uuJbUG33tBZjksj7GAZ1iUQ6NHwjUURPmSGang==}
+    engines: {node: '>= 10.13'}
+    peerDependencies:
+      react: '>= 16.8'
+    dependencies:
+      attr-accept: 2.2.2
+      file-selector: 0.4.0
+      prop-types: 15.8.1
+      react: 17.0.2
     dev: true
 
   /react-element-to-jsx-string/14.3.4_react-dom@17.0.2+react@17.0.2:

@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.19.0
+
+### Minor Changes
+
+- imageupload component
+
 ## 1.18.0
 
 ### Minor Changes

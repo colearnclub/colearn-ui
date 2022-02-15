@@ -21,6 +21,7 @@ const config = [
       'react-router-dom',
       'react-day-picker',
       'imagekit-javascript',
+      'react-dropzone',
       'nanoid',
     ],
     plugins: [

@@ -8,8 +8,10 @@ import useImageUplaod, { ImageUplpoadDirs } from './components/useImageUplaod';
 import { getResourceImg, type ResourceImgSize } from './getResourceImg';
 
 import { ResourceCardImage } from './components/ResoureCardImage';
+import ImagePicker from './components/ImagePicker/ImagePicker';
 
 export {
+  ImagePicker,
   ImgKitClient,
   getResourceImg,
   ResourceImgSize,
