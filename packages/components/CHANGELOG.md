@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.23.0
+
+### Minor Changes
+
+- weekdaybuttons
+
 ## 1.22.0
 
 ### Minor Changes

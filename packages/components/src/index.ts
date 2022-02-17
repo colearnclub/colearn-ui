@@ -19,6 +19,7 @@ import ResourcesGrid, {
   DEFAULT_PAGE_SIZE,
 } from './components/tokens/ResourcesGrid';
 import LearnerDropdown from './components/tokens/LearnerDropdown';
+import WeekdayButton from './components/tokens/WeekdayButton';
 
 import * as MultiProgress from './components/common/MultiProgressBar';
 import Tag from './components/common/Tag';
@@ -90,6 +91,7 @@ export {
   LearnerTab,
   LearnerTabLink,
   LearnerDropdown,
+  WeekdayButton,
   // common
   DateSelect,
   IcontBtn,

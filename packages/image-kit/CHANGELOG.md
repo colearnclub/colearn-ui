@@ -1,5 +1,11 @@
 # @colearn/image-kit
 
+## 1.5.0
+
+### Minor Changes
+
+- weekdaybuttons
+
 ## 1.4.0
 
 ### Minor Changes
