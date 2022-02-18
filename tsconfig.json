@@ -1,5 +1,9 @@
 {
   "extends": "./packages/build-utils/tsconfig.base.json",
-  "include": ["packages"],
-  "exclude": ["dist", "node_modules", "packages/build-utils"]
+  "exclude": ["dist", "node_modules", "packages/build-utils", "docs"],
+  "references": [
+    {"path": "packages/components/src" },
+    {"path": "packages/image-kit/src" },
+    {"path": "packages/theme/src" },
+  ]
 }
