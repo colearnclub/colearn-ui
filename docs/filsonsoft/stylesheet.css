@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-heavy-webfont.woff2') format('woff2'),
+    url('filsonsoft-heavy-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-heavyit-webfont.woff2') format('woff2'),
+    url('filsonsoft-heavyit-webfont.woff') format('woff');
+  font-weight: 900l;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-black-webfont.woff2') format('woff2'),
+    url('filsonsoft-black-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-blackit-webfont.woff2') format('woff2'),
+    url('filsonsoft-blackit-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-bold-webfont.woff2') format('woff2'),
+    url('filsonsoft-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-boldit-webfont.woff2') format('woff2'),
+    url('filsonsoft-boldit-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-medium-webfont.woff2') format('woff2'),
+    url('filsonsoft-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-mediumit-webfont.woff2') format('woff2'),
+    url('filsonsoft-mediumit-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-regular-webfont.woff2') format('woff2'),
+    url('filsonsoft-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-regularit-webfont.woff2') format('woff2'),
+    url('filsonsoft-regularit-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-book-webfont.woff2') format('woff2'),
+    url('filsonsoft-book-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-bookit-webfont.woff2') format('woff2'),
+    url('filsonsoft-bookit-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-light-webfont.woff2') format('woff2'),
+    url('filsonsoft-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-lightit-webfont.woff2') format('woff2'),
+    url('filsonsoft-lightit-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-thin-webfont.woff2') format('woff2'),
+    url('filsonsoft-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'filsonsoft';
+  src: url('filsonsoft-thinit-webfont.woff2') format('woff2'),
+    url('filsonsoft-thinit-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
