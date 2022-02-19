@@ -22,8 +22,8 @@
     "changeset": "changeset",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./docs",
-    "ci:version": "pnpx changeset version && pnpm install --no-frozen-lockfile && git add .",
-    "ci:publish": "pnpm build && git status && pnpm publish -r && pnpm changeset tag"
+    "ci:version": "pnpx changeset version",
+    "ci:publish": "pnpm build && pnpm publish -r && pnpm changeset tag"
   },
   "devDependencies": {
     "@babel/core": "^7.17.4",
