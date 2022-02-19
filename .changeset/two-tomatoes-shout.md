@@ -1,0 +1,5 @@
+---
+'@colearn/components': minor
+---
+
+test

@@ -21,12 +21,12 @@ export function Card() {
   );
 }
 
-type Props = {
+type CardProps = {
   loaded: boolean;
   num?: number;
 };
 
-export function Cards({ loaded, num = 4 }: Props) {
+export function Cards({ loaded, num = 4 }: CardProps) {
   if (loaded) {
     return null;
   }
