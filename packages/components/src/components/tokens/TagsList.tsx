@@ -1,4 +1,4 @@
-import Tag from './Tag';
+import Tag from '../common/Tag';
 import { Tag as TagEntity, Maybe } from '../types';
 
 type Props = {

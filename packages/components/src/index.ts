@@ -34,7 +34,7 @@ import {
   type SuggestionType,
   getAutocompleteA11yProps,
 } from './components/common/Autocomplete';
-import TagsList from './components/common/TagsList';
+import TagsList from './components/tokens/TagsList';
 
 import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
