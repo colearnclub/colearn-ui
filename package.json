@@ -21,9 +21,7 @@
     "lint:fix": "eslint 'src/**/*.{js,jsx,scss,ts,tsx}' --fix",
     "changeset": "changeset",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./docs",
-    "ci:version": "pnpx changeset version",
-    "ci:publish": "pnpm build && pnpm publish -r && pnpm changeset tag"
+    "build-storybook": "build-storybook -o ./docs"
   },
   "devDependencies": {
     "@babel/core": "^7.17.4",
