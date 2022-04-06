@@ -50,8 +50,7 @@
   cursor: pointer;
 }
 
-.rdp-button:focus:not([disabled]),
-.rdp-button:active:not([disabled]) {
+.rdp-button:focus:not([disabled]) {
   color: inherit;
   border: var(--rdp-outline);
   background-color: var(--rdp-background-color);
