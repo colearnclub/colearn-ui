@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.26.0
+
+### Minor Changes
+
+- fix styles calendar
+
 ## 1.25.0
 
 ### Minor Changes
