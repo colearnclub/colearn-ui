@@ -1,5 +1,12 @@
 # @colearn/components
 
+## 1.25.0
+
+### Minor Changes
+
+- 1c432c8: fix styles
+- c4095ad: test
+
 ## 1.24.0
 
 ### Minor Changes
