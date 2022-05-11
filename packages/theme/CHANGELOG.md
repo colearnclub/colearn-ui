@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 1.7.0
+
+### Minor Changes
+
+- 128fc3e: person components
+
 ## 1.6.0
 
 ### Minor Changes

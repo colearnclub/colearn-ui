@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.27.0
+
+### Minor Changes
+
+- 128fc3e: person components
+
 ## 1.26.0
 
 ### Minor Changes
