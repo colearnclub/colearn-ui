@@ -9,6 +9,8 @@ import * as Page from './components/app/Page';
 import * as Sidebar from './components/app/Sidebar';
 
 import { AvatarLabel } from './components/tokens/AvatarLabel';
+import { avatarProps } from './components/tokens/avatar';
+
 import { PersonTab } from './components/tokens/PersonTab';
 import {
   PersonTabLink,
@@ -90,6 +92,7 @@ export {
   ResourcesGrid,
   DEFAULT_PAGE_SIZE,
   ResourceLoading,
+  avatarProps,
   AvatarLabel,
   PersonTabLink,
   PersonTabLinks,
