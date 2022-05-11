@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
 import {
+  Avatar,
   Button,
   Menu,
   MenuButton,
@@ -13,11 +14,12 @@ import { SmallCloseIcon } from '@chakra-ui/icons';
 import EmptyLearnerIcon from '../../assets/empty-learner.svg';
 import DiscloseIcon from '../../assets/disclose-down.svg';
 
-import { LearnerAvatar, LearnerAvatarLabel } from './LearnerAvatar';
-import { Learner, Maybe } from '../types';
+import { avatarProps } from './avatar';
+import { PersonMembership, Maybe } from '../types';
+import { AvatarLabel } from './AvatarLabel';
 
 type Props = Omit<MenuProps, 'onChange' | 'children'> & {
-  learners?: Maybe<Maybe<Learner | undefined>[]>;
+  members?: Maybe<Maybe<PersonMembership | undefined>[]>;
   value?: Maybe<string>;
   clearButton?: boolean;
   placeholder?: string;
@@ -25,9 +27,9 @@ type Props = Omit<MenuProps, 'onChange' | 'children'> & {
   onChange?: (id?: Maybe<string>) => void;
 };
 
-export default function LearnerDropdown({
+export default function ChildrenDropdown({
   value,
-  learners,
+  members,
   clearButton,
   placeholder = 'Select',
   menuButtonVariant = 'dropdown-menu',
@@ -49,7 +51,7 @@ export default function LearnerDropdown({
     [onChange],
   );
 
-  const learner = learners?.find((l) => l?.id === value);
+  const selected = members?.find((l) => l?.personId === value);
   return (
     <Menu {...rest}>
       <MenuButton
@@ -57,7 +59,10 @@ export default function LearnerDropdown({
         variant={menuButtonVariant}
         size="lg"
         leftIcon={
-          <LearnerAvatar learner={learner} icon={<EmptyLearnerIcon />} />
+          <Avatar
+            {...avatarProps(selected?.person)}
+            icon={<EmptyLearnerIcon />}
+          />
         }
         rightIcon={
           clearButton && value ? (
@@ -67,15 +72,15 @@ export default function LearnerDropdown({
           )
         }
       >
-        <LearnerAvatarLabel ml="0">
-          {learner?.name ?? placeholder}
-        </LearnerAvatarLabel>
+        <AvatarLabel ml="0">
+          {selected?.person?.firstName ?? placeholder}
+        </AvatarLabel>
       </MenuButton>
       <MenuList defaultValue={value ?? undefined}>
-        {learners?.map((l) => (
-          <MenuItem key={l?.id} value={l?.id} onClick={select}>
-            <LearnerAvatar learner={l} />
-            <LearnerAvatarLabel>{l?.name}</LearnerAvatarLabel>
+        {members?.map((m) => (
+          <MenuItem key={m?.id} value={m?.personId} onClick={select}>
+            <Avatar {...avatarProps(m?.person)} />
+            <AvatarLabel>{m?.person?.firstName}</AvatarLabel>
           </MenuItem>
         ))}
       </MenuList>

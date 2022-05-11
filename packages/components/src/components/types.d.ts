@@ -27,7 +27,6 @@ export type PageCursor = {
 };
 
 export type PageCursorInfo = {
-  __typename?: 'PageCursorInfo';
   endCursor?: Maybe<string>;
   hasNextPage?: Maybe<boolean>;
 };
@@ -38,25 +37,22 @@ export type PageOffset = {
 };
 
 export type PageOffsetInfo = {
-  __typename?: 'PageOffsetInfo';
   hasNextPage?: Maybe<boolean>;
   limit?: Maybe<number>;
   offset?: Maybe<number>;
 };
 
-export type LearnerAttributes = {
-  __typename?: 'LearnerAttributes';
+export type Person = {
   avatar?: Maybe<string>;
-  birthDate?: Maybe<string>;
+  firstName?: Maybe<string>;
+  id: string;
+  lastName?: Maybe<string>;
 };
 
-export type Learner = {
-  __typename?: 'Learner';
+export type PersonMembership = {
   id: string;
-  uuid?: Maybe<string>;
-  name: string;
-  userId?: Maybe<string>;
-  attributes?: Maybe<LearnerAttributes>;
+  person?: Maybe<Person>;
+  personId: string;
 };
 
 export type Tag = {

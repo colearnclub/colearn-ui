@@ -5,7 +5,7 @@ import Checkbox from './controls/Checkbox';
 import FormLabel from './controls/FormLabel';
 
 import { Input, Textarea } from './controls/Input';
-import LearnerTab from './controls/LearnerTab';
+import PersonTab from './controls/PersonTab';
 import Menu from './controls/Menu';
 import Modal from './controls/Modal';
 import MultiProgressBar from './controls/MultiProgressBar';
@@ -29,7 +29,7 @@ const controls = {
   FormLabel,
   Input,
   Textarea,
-  LearnerTab,
+  PersonTab,
   Menu,
   Modal,
   MultiProgressBar,

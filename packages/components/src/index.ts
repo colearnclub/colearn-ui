@@ -8,17 +8,18 @@ import * as Appbar from './components/app/Appbar';
 import * as Page from './components/app/Page';
 import * as Sidebar from './components/app/Sidebar';
 
+import { AvatarLabel } from './components/tokens/AvatarLabel';
+import { PersonTab } from './components/tokens/PersonTab';
 import {
-  LearnerAvatar,
-  LearnerAvatarLabel,
-} from './components/tokens/LearnerAvatar';
-import { LearnerTabLink, LearnerTab } from './components/tokens/LearnerTab';
+  PersonTabLink,
+  PersonTabLinks,
+} from './components/tokens/PersonTabLinks';
 import * as ResourceCard from './components/tokens/ResourceCard';
 import * as ResourceLoading from './components/tokens/ResourceCardLoading';
 import ResourcesGrid, {
   DEFAULT_PAGE_SIZE,
 } from './components/tokens/ResourcesGrid';
-import LearnerDropdown from './components/tokens/LearnerDropdown';
+import PersonDropdown from './components/tokens/PersonDropdown';
 import WeekdayButton from './components/tokens/WeekdayButton';
 
 import * as MultiProgress from './components/common/MultiProgressBar';
@@ -40,7 +41,10 @@ import useDebouncedValue from './components/hooks/useDebouncedValue';
 import useDelay from './components/hooks/useDelay';
 import useDimenstionsObserver from './components/hooks/useDimenstionsObserver';
 import useDocumentTitle from './components/hooks/useDocumentTitle';
-import useEntitiesMap from './components/hooks/useEntitiesMap';
+import {
+  useEntitiesMap,
+  useKeyedEntitiesMap,
+} from './components/hooks/useEntitiesMap';
 import useEntitySelect from './components/hooks/useEntitySelect';
 import useHorizonralScrollAnimation from './components/hooks/useHorizonralScrollAnimation';
 import useInfinitePageScroll from './components/hooks/useInfinitePageScroll';
@@ -86,11 +90,11 @@ export {
   ResourcesGrid,
   DEFAULT_PAGE_SIZE,
   ResourceLoading,
-  LearnerAvatar,
-  LearnerAvatarLabel,
-  LearnerTab,
-  LearnerTabLink,
-  LearnerDropdown,
+  AvatarLabel,
+  PersonTabLink,
+  PersonTabLinks,
+  PersonTab,
+  PersonDropdown,
   WeekdayButton,
   // common
   DateSelect,
@@ -112,6 +116,7 @@ export {
   useDimenstionsObserver,
   useDocumentTitle,
   useEntitiesMap,
+  useKeyedEntitiesMap,
   useEntitySelect,
   useHorizonralScrollAnimation,
   useInfinitePageScroll,

@@ -1,4 +1,4 @@
-const LearnerTab = {
+const PersonTab = {
   parts: ['container', 'avatar', 'label'],
   baseStyle: {
     container: {
@@ -50,4 +50,4 @@ const LearnerTab = {
   },
 };
 
-export default LearnerTab;
+export default PersonTab;
