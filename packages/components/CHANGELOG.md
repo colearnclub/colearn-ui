@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.29.1
+
+### Patch Changes
+
+- test
+
 ## 1.29.0
 
 ### Minor Changes
