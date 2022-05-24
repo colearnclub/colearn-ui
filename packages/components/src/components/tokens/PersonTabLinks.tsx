@@ -9,7 +9,7 @@ export function PersonTabLink(props: { to: string } & PersonTabProps) {
   return <PersonTab as={Link} {...props} />;
 }
 
-type Props = {
+type Props = FlexProps & {
   members?: Maybe<Maybe<PersonMembership>[]>;
   all?: boolean;
   selected?: string;
@@ -26,7 +26,7 @@ export function PersonTabLinks({
   formatterArgs,
   selected,
   ...rest
-}: Props & FlexProps) {
+}: Props) {
   return (
     <Flex align="center" flexWrap="wrap" {...rest}>
       {all && (
