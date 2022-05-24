@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, FlexProps } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 import { PersonTab, PersonTabProps } from './PersonTab';
@@ -9,7 +9,7 @@ export function PersonTabLink(props: { to: string } & PersonTabProps) {
   return <PersonTab as={Link} {...props} />;
 }
 
-type Props = {
+type Props = FlexProps & {
   members?: Maybe<Maybe<PersonMembership>[]>;
   all?: boolean;
   selected?: string;
@@ -25,9 +25,10 @@ export function PersonTabLinks({
   urlFormatter,
   formatterArgs,
   selected,
+  ...rest
 }: Props) {
   return (
-    <Flex align="center" flexWrap="wrap" maxWidth="70%">
+    <Flex align="center" flexWrap="wrap" {...rest}>
       {all && (
         <PersonTabLink
           pl="1rem"
