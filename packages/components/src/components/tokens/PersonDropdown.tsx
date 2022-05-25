@@ -27,7 +27,7 @@ type Props = Omit<MenuProps, 'onChange' | 'children'> & {
   onChange?: (id?: Maybe<string>) => void;
 };
 
-export default function ChildrenDropdown({
+export default function PersonDropdown({
   value,
   members,
   clearButton,

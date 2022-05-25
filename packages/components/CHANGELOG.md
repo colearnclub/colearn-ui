@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 1.30.0
+
+### Minor Changes
+
+- menu theme
+
 ## 1.29.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 1.8.0
+
+### Minor Changes
+
+- menu theme
+
 ## 1.7.0
 
 ### Minor Changes
