@@ -1,6 +1,6 @@
 {
   "name": "@colearn/theme",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "description": "Colean UI Theme",
   "author": "Colearn",
   "license": "ISC",
@@ -20,7 +20,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@colearn/build-utils": "workspace:^0.0.0",
+    "@colearn/build-utils": "workspace:^1.0.0",
     "rollup": "^2.75.6"
   }
 }

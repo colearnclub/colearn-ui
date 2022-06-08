@@ -1,6 +1,6 @@
 {
   "name": "@colearn/components",
-  "version": "1.30.0",
+  "version": "2.0.0",
   "description": "Colearn UI Kit: Components",
   "author": "Colearn",
   "license": "ISC",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
-    "@colearn/build-utils": "workspace:^0.0.0",
+    "@colearn/build-utils": "workspace:^1.0.0",
     "react-day-picker": "^8.0.6",
     "react-router-dom": "^6.3.0",
     "rollup": "^2.75.6",
