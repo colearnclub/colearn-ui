@@ -44,7 +44,7 @@ const PersonTab = {
         borderColor: '#e4e4e4',
       },
       label: {
-        isTruncated: true,
+        noOfLines: 1,
       },
     },
   },

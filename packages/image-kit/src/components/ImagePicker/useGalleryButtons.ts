@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { MouseEvent, useCallback } from 'react';
 
 type Props = {
   imageUrls?: string[] | null;
@@ -17,7 +17,7 @@ export default function useGalleryButtons({
   const count = imageUrls?.length || 0;
 
   const next = useCallback(
-    (evt) => {
+    (evt: MouseEvent<HTMLElement>) => {
       evt.preventDefault();
       evt.stopPropagation();
       if (!readOnly && count) {
@@ -29,7 +29,7 @@ export default function useGalleryButtons({
   );
 
   const prev = useCallback(
-    (evt) => {
+    (evt: MouseEvent<HTMLElement>) => {
       evt.preventDefault();
       evt.stopPropagation();
 

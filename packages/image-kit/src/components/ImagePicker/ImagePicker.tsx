@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState, MouseEvent } from 'react';
 import { useDropzone } from 'react-dropzone';
 
 import { FormControl, FormErrorMessage, IconButton } from '@chakra-ui/react';
@@ -47,7 +47,7 @@ export default function ImagePicker({
   });
 
   const drop = useCallback(
-    async (acceptedFiles) => {
+    async (acceptedFiles: File[]) => {
       if (uploading) {
         return;
       }
@@ -69,7 +69,7 @@ export default function ImagePicker({
   );
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    accept: ['image/*'],
+    accept: { 'image/*': ['.png', '.gif', '.jpeg', '.jpg'] },
     multiple: false,
     maxSize: MAX_SIZE,
     noClick: false,
@@ -78,7 +78,7 @@ export default function ImagePicker({
   });
 
   const clear = useCallback(
-    (evt) => {
+    (evt: MouseEvent<HTMLButtonElement>) => {
       evt.preventDefault();
       evt.stopPropagation();
 

@@ -1,4 +1,4 @@
-import { useCallback, ReactElement } from 'react';
+import { useCallback, ReactElement, MouseEvent } from 'react';
 
 import {
   Tag as UITag,
@@ -24,7 +24,7 @@ export default function Tag({
   ...rest
 }: Props) {
   const click = useCallback(
-    (evt) => {
+    (evt: MouseEvent<HTMLElement>) => {
       evt.preventDefault();
       evt.stopPropagation();
 
@@ -34,7 +34,7 @@ export default function Tag({
   );
 
   const del = useCallback(
-    (evt) => {
+    (evt: MouseEvent<HTMLElement>) => {
       evt.preventDefault();
       evt.stopPropagation();
 

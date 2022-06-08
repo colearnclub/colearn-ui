@@ -24,7 +24,7 @@ export default function useImageUplaod(
   const ik = useImageKit();
 
   const upload = useCallback(
-    (file) => {
+    (file: File) => {
       const fileName = `${nanoid(16)}${getFilExt(file.name)}`;
       return ik!.upload(file, fileName, ImageUplpoadDirs[dir]);
     },

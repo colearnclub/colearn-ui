@@ -17,11 +17,11 @@
     "build": "rollup -c"
   },
   "peerDependencies": {
-    "@chakra-ui/react": ">=1.8",
-    "@chakra-ui/icons": ">=1",
-    "react": ">=17",
+    "@chakra-ui/react": ">=2",
+    "@chakra-ui/icons": ">=2",
+    "react": ">=18",
     "react-day-picker": ">=8",
-    "react-dom": ">=17",
+    "react-dom": ">=18",
     "react-router-dom": ">=6"
   },
   "peerDependenciesMeta": {
@@ -33,12 +33,12 @@
     }
   },
   "devDependencies": {
-    "@chakra-ui/icons": "^1.1.5",
-    "@chakra-ui/react": "^1.8.3",
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
     "@colearn/build-utils": "workspace:^0.0.0",
-    "react-day-picker": "^8.0.0-beta.38",
-    "react-router-dom": "^6.2.1",
-    "rollup": "^2.67.1",
-    "tslib": "^2.3.1"
+    "react-day-picker": "^8.0.6",
+    "react-router-dom": "^6.3.0",
+    "rollup": "^2.75.6",
+    "tslib": "^2.4.0"
   }
 }

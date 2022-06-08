@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { MouseEventHandler, useCallback } from 'react';
 import {
   Box,
   CSSWithMultiValues,
@@ -61,7 +61,7 @@ export function Suggestion({
   active,
   styles,
 }: SuggestionProps) {
-  const mouseDown = useCallback(
+  const mouseDown: MouseEventHandler<HTMLElement> = useCallback(
     (e) => {
       e.preventDefault();
       onAdd(suggestion);
@@ -89,7 +89,7 @@ export function Suggestion({
         />
       )}
       <Box
-        isTruncated
+        noOfLines={1}
         dangerouslySetInnerHTML={{
           __html: suggestion.name ? markIt(suggestion.name!, query ?? '') : '',
         }}

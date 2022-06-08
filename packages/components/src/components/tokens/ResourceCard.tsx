@@ -31,7 +31,7 @@ export const Container = forwardRef(
 export function Header(props: BoxProps) {
   const styles = useStyles();
 
-  return <Box isTruncated __css={styles.header} {...props} />;
+  return <Box noOfLines={1} __css={styles.header} {...props} />;
 }
 
 export function Ages({
