@@ -26,7 +26,6 @@ export function Text(props: BoxProps) {
     <Box
       display={{ base: 'none', '2xl': 'block' }}
       whiteSpace="nowrap"
-      isTruncated
       {...props}
     />
   );

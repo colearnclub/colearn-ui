@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { MouseEvent, useCallback } from 'react';
 import {
   Avatar,
   Button,
@@ -37,14 +37,14 @@ export default function PersonDropdown({
   ...rest
 }: Props) {
   const select = useCallback(
-    (evt) => {
+    (evt: MouseEvent<HTMLButtonElement>) => {
       onChange?.(evt.currentTarget.value);
     },
     [onChange],
   );
 
   const clear = useCallback(
-    (evt) => {
+    (evt: MouseEvent<HTMLOrSVGElement>) => {
       evt.preventDefault();
       onChange?.(undefined);
     },
