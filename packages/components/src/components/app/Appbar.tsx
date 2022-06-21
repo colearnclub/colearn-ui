@@ -78,10 +78,10 @@ export function Badge(props: BoxProps) {
     <Box
       pos="absolute"
       top="-2px"
-      right="-4px"
+      px="4px"
+      left="50%"
       bg="#d02020"
       color="white"
-      w="15px"
       h="15px"
       borderRadius="8px"
       fontSize="9px"
