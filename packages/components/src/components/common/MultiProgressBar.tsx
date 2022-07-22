@@ -1,4 +1,4 @@
-import { useContext, createContext } from 'react';
+import { useContext, createContext, CSSProperties } from 'react';
 import {
   Tooltip,
   StylesProvider,
@@ -40,6 +40,7 @@ type MultiProgressBarProps = BoxProps & {
   type?: 'primary' | 'secondary' | 'blank';
   value?: number;
   label?: string;
+  style?: CSSProperties;
 };
 
 export function Bar({
@@ -48,6 +49,7 @@ export function Bar({
   bg,
   children,
   type = 'primary',
+  style = {},
   ...rest
 }: MultiProgressBarProps) {
   const styles = useStyles();
@@ -63,7 +65,9 @@ export function Bar({
         style={{
           width: `${width}%`,
           backgroundColor: (bg as string | undefined) ?? color,
+          ...style,
         }}
+        {...rest}
       >
         {children}
       </Box>
