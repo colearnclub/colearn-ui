@@ -94,7 +94,7 @@ importers:
     specifiers:
       '@chakra-ui/icons': ^2.0.2
       '@chakra-ui/react': ^2.2.1
-      '@colearn/build-utils': workspace:^0.0.0
+      '@colearn/build-utils': workspace:^1.0.0
       react-day-picker: ^8.0.6
       react-router-dom: ^6.3.0
       rollup: ^2.75.6
@@ -112,7 +112,7 @@ importers:
     specifiers:
       '@chakra-ui/icons': ^2.0.2
       '@chakra-ui/react': ^2.2.1
-      '@colearn/build-utils': workspace:^0.0.0
+      '@colearn/build-utils': workspace:^1.0.0
       imagekit-javascript: ^1.4.3
       nanoid: ^3.3.1
       react-dropzone: ^14.2.1
@@ -130,7 +130,7 @@ importers:
 
   packages/theme:
     specifiers:
-      '@colearn/build-utils': workspace:^0.0.0
+      '@colearn/build-utils': workspace:^1.0.0
       rollup: ^2.75.6
     devDependencies:
       '@colearn/build-utils': link:../build-utils
