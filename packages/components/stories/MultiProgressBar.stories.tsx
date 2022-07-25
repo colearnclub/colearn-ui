@@ -1,4 +1,8 @@
-import { Bar, Container } from '../src/components/common/MultiProgressBar';
+import {
+  Bar,
+  Container,
+  Bonus,
+} from '../src/components/common/MultiProgressBar';
 import minutesToHours from 'date-fns/minutesToHours';
 
 export default {
@@ -82,6 +86,32 @@ export function Colorful(args) {
           style={{ borderRadius: '8px' }}
         />
       )}
+    </Container>
+  );
+}
+
+export function WithBonus(args) {
+  const done = 30,
+    planned = 70,
+    goal = 100,
+    bonus = 13;
+
+  return (
+    <Container max={goal + bonus} size="lg" w="100%" style={{ marginTop: 50 }}>
+      <Bar
+        value={goal}
+        label={`${minsOrHrs(Math.max(goal - planned, 0))} Remaining`}
+        bg="transparent"
+      />
+      <Bar
+        value={Math.min(planned, goal)}
+        label={`${minsOrHrs(planned)} Planned`}
+        type="secondary"
+      />
+      <Bonus value={bonus} label="additional" />
+      <Bar value={done} label={`${minsOrHrs(done)} Completed`}>
+        <div>{(goal / 100) * done}%</div>
+      </Bar>
     </Container>
   );
 }

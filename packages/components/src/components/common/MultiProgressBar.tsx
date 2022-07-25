@@ -74,3 +74,36 @@ export function Bar({
     </Tooltip>
   );
 }
+
+type MultiProgressBarBonusProps = BoxProps & {
+  value?: number;
+  label?: string;
+  style?: CSSProperties;
+};
+
+export function Bonus({
+  value,
+  children,
+  style = {},
+  label,
+  ...rest
+}: MultiProgressBarBonusProps) {
+  const styles = useStyles();
+  const { max } = useContext(MultiProgressContext);
+
+  const width = ((value ?? 0) / max) * 100;
+  return (
+    <Tooltip label={label} placement="bottom-end" hasArrow>
+      <Box
+        __css={styles.bonus}
+        style={{
+          width: `${width}%`,
+          ...style,
+        }}
+        {...rest}
+      >
+        {children}
+      </Box>
+    </Tooltip>
+  );
+}
