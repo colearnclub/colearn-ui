@@ -10,7 +10,7 @@ export function Main(props: BoxProps) {
     <Box
       as="main"
       boxSizing="border-box"
-      pl={{ base: '5rem', '2xl': '10rem' }}
+      pl={{ base: 0, md: '5rem', '2xl': '10rem' }}
       minH="100vh"
       {...props}
       sx={{
@@ -24,7 +24,7 @@ export function Main(props: BoxProps) {
 
 export function Container({ title, ...rest }: Props) {
   useDocumentTitle(title);
-  return <Box p="2rem" {...rest} />;
+  return <Box py="2rem" {...rest} />;
 }
 
 export function Content(props: BoxProps) {

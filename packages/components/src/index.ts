@@ -7,6 +7,7 @@ import { Modal, ModalClose, ModalPrimary } from './components/containers/Modal';
 import * as Appbar from './components/app/Appbar';
 import * as Page from './components/app/Page';
 import * as Sidebar from './components/app/Sidebar';
+import * as OpenMenuContext from './components/app/OpenMenuContext';
 
 import { AvatarLabel } from './components/tokens/AvatarLabel';
 import { avatarProps } from './components/tokens/avatar';
@@ -82,6 +83,7 @@ export {
   AppLoader,
   NotFoundPage,
   Page,
+  OpenMenuContext,
   // containers
   InfinitListContainer,
   Modal,

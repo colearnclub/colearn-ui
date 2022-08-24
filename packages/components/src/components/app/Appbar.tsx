@@ -115,7 +115,14 @@ export function IconButton({
 }
 
 export function TitleContainer(props: BoxProps) {
-  return <Box display="flex" alignItems="flex-end" h="1.5rem" {...props} />;
+  return (
+    <Box
+      alignItems="flex-end"
+      h="1.5rem"
+      display={{ base: 'none', md: 'flex' }}
+      {...props}
+    />
+  );
 }
 
 export function Title(props: BoxProps) {
