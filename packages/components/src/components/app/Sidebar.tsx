@@ -41,7 +41,7 @@ export const Container = forwardRef(
 export function Text(props: BoxProps) {
   return (
     <Box
-      display={{ base: 'none', '2xl': 'block' }}
+      display={{ base: 'block', md: 'none', '2xl': 'block' }}
       whiteSpace="nowrap"
       {...props}
     />
