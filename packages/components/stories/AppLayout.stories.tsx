@@ -3,6 +3,8 @@ import * as Page from '../src/components/app/Page';
 import * as Sidebar from '../src/components/app/Sidebar';
 import * as Appbar from '../src/components/app/Appbar';
 import { MemoryRouter } from 'react-router-dom';
+import { NavLink, NavLinks } from '../src';
+import { HamburgerIcon } from '@chakra-ui/icons';
 
 export default {
   title: 'App/Layout',
@@ -17,8 +19,14 @@ export function LayoutExample() {
             <Sidebar.CollapsibleContainer>
               <Box>
                 <Sidebar.LogoLink to="/">Logo</Sidebar.LogoLink>
-                <Box>asdasdsad</Box>
-                <Button onClick={() => console.log('clicked')}>Click</Button>
+                <NavLinks variant="sidebar">
+                  <NavLink to="/" icon={<HamburgerIcon />}>
+                    <Sidebar.Text>Link 1</Sidebar.Text>
+                  </NavLink>
+                  <NavLink to="/" icon={<HamburgerIcon />}>
+                    <Sidebar.Text>Link 2</Sidebar.Text>
+                  </NavLink>
+                </NavLinks>
               </Box>
             </Sidebar.CollapsibleContainer>
             <Appbar.Container>
