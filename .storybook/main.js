@@ -7,6 +7,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-postcss',
     '@storybook/addon-essentials',
+    'storybook-addon-react-router-v6',
   ],
   staticDirs: ['../public'],
   framework: '@storybook/react',
