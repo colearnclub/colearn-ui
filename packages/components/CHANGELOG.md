@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.2.2
+
+### Patch Changes
+
+- fix text
+
 ## 2.2.1
 
 ### Patch Changes
