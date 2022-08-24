@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, ForwardedRef, ReactNode, useContext } from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
@@ -9,6 +9,7 @@ import {
   DrawerContent,
   forwardRef,
   IconButton,
+  IconButtonProps,
   useDisclosure,
   UseDisclosureReturn,
 } from '@chakra-ui/react';
@@ -16,7 +17,7 @@ import { Link } from 'react-router-dom';
 import useMatchMedia from '../hooks/useMatchMedia';
 
 export const Container = forwardRef(
-  (props: ButtonProps, ref: ForwardedRef<HTMLElement | null>) => {
+  (props: BoxProps, ref: ForwardedRef<HTMLElement | null>) => {
     return (
       <Box
         as="nav"
@@ -59,14 +60,11 @@ export const LogoLink = chakra(Link, {
   },
 });
 
-export const CollapsibleSidebarContext = createContext<UseDisclosureReturn>({
-  isOpen: false,
-  onOpen: () => {},
-  onClose: () => {},
-});
+export const CollapsibleSidebarContext =
+  createContext<UseDisclosureReturn | null>(null);
 
 export function useCollapsibleSidebar() {
-  return useContext(CollapsibleSidebarContext);
+  return useContext(CollapsibleSidebarContext)!;
 }
 
 export function CollapsibleProvider({ children }: { children?: ReactNode }) {
@@ -104,13 +102,13 @@ export function CollapsibleToggleButton(props: IconButtonProps) {
   const { onToggle } = useCollapsibleSidebar();
   return (
     <IconButton
+      {...props}
       size="sm"
       variant="link"
       display={{ base: 'block', md: 'none' }}
       onClick={onToggle}
       aria-label="toggle sidebar"
       icon={<HamburgerIcon />}
-      {...props}
     />
   );
 }
