@@ -10,7 +10,7 @@ export function Main(props: BoxProps) {
     <Box
       as="main"
       boxSizing="border-box"
-      pl={{ base: '5rem', '2xl': '10rem' }}
+      pl={{ base: 0, md: '5rem', '2xl': '10rem' }}
       minH="100vh"
       {...props}
       sx={{

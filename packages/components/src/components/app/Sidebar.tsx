@@ -1,25 +1,41 @@
-import { Box, BoxProps, chakra } from '@chakra-ui/react';
+import { createContext, useContext } from 'react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import {
+  Box,
+  BoxProps,
+  chakra,
+  Drawer,
+  DrawerCloseButton,
+  DrawerContent,
+  forwardRef,
+  IconButton,
+  useDisclosure,
+  UseDisclosureReturn,
+} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import useMatchMedia from '../hooks/useMatchMedia';
 
-export function Container(props: BoxProps) {
-  return (
-    <Box
-      as="nav"
-      pos="fixed"
-      left="0"
-      top="0"
-      w={{ base: '5rem', '2xl': '10rem' }}
-      height="100vh"
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
-      bg="bg.800"
-      pb="1.75rem"
-      zIndex={4}
-      {...props}
-    />
-  );
-}
+export const Container = forwardRef(
+  (props: ButtonProps, ref: ForwardedRef<HTMLElement | null>) => {
+    return (
+      <Box
+        as="nav"
+        pos="fixed"
+        left="0"
+        top="0"
+        w={{ base: '100%', md: '5rem', '2xl': '10rem' }}
+        height="100vh"
+        display={{ base: 'flex' }}
+        flexDirection="column"
+        justifyContent="space-between"
+        bg="bg.800"
+        pb="1.75rem"
+        zIndex={4}
+        {...props}
+      />
+    );
+  },
+);
 
 export function Text(props: BoxProps) {
   return (
@@ -42,3 +58,59 @@ export const LogoLink = chakra(Link, {
     borderBottomColor: 'rgba(255, 255, 255, 0.2)',
   },
 });
+
+export const CollapsibleSidebarContext = createContext<UseDisclosureReturn>({
+  isOpen: false,
+  onOpen: () => {},
+  onClose: () => {},
+});
+
+export function useCollapsibleSidebar() {
+  return useContext(CollapsibleSidebarContext);
+}
+
+export function CollapsibleProvider({ children }: { children?: ReactNode }) {
+  const ctx = useDisclosure();
+  return (
+    <CollapsibleSidebarContext.Provider value={ctx}>
+      {children}
+    </CollapsibleSidebarContext.Provider>
+  );
+}
+
+const mdQuery = '(min-width: 768px)';
+
+export function CollapsibleContainer({ children }: { children?: ReactNode }) {
+  const { isOpen, onClose } = useCollapsibleSidebar();
+  const isDesktop = useMatchMedia(mdQuery);
+
+  if (isDesktop) {
+    return <Container>{children}</Container>;
+  }
+
+  return (
+    <Drawer placement="left" isOpen={isOpen} onClose={onClose}>
+      <DrawerContent>
+        <Container onClick={onClose}>
+          <DrawerCloseButton color="white" />
+          {children}
+        </Container>
+      </DrawerContent>
+    </Drawer>
+  );
+}
+
+export function CollapsibleToggleButton(props: IconButtonProps) {
+  const { onToggle } = useCollapsibleSidebar();
+  return (
+    <IconButton
+      size="sm"
+      variant="link"
+      display={{ base: 'block', md: 'none' }}
+      onClick={onToggle}
+      aria-label="toggle sidebar"
+      icon={<HamburgerIcon />}
+      {...props}
+    />
+  );
+}
