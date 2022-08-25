@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.3.0
+
+### Minor Changes
+
+- mobile appbar
+
 ## 2.2.2
 
 ### Patch Changes
