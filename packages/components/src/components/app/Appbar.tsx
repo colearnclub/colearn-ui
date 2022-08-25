@@ -17,7 +17,6 @@ export function Container(props: BoxProps) {
       height="3.125rem"
       borderBottom="1px"
       borderBottomColor="rgba(92, 164, 175, 0.15)"
-      minW="100vw"
       zIndex={15}
       {...props}
     />
