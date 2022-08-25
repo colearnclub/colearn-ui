@@ -108,7 +108,6 @@ export function CollapsibleToggleButton(props: IconButtonProps) {
       variant="link"
       display={{ base: 'block', md: 'none' }}
       onClick={onToggle}
-      aria-label="toggle sidebar"
       icon={<HamburgerIcon />}
       {...props}
     />
