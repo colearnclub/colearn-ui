@@ -27,8 +27,7 @@ export function Inner({ justifyContent, ...props }: FlexProps) {
   return (
     <Flex
       boxSizing="border-box"
-      pl="1.25rem"
-      pr="1.25rem"
+      px={{ base: '0.5rem', md: '1.25rem' }}
       align="center"
       h="100%"
       justifyContent={justifyContent || 'space-between'}
@@ -115,7 +114,14 @@ export function IconButton({
 }
 
 export function TitleContainer(props: BoxProps) {
-  return <Box display="flex" alignItems="flex-end" h="1.5rem" {...props} />;
+  return (
+    <Box
+      display={{ base: 'none', md: 'flex' }}
+      alignItems="flex-end"
+      h="1.5rem"
+      {...props}
+    />
+  );
 }
 
 export function Title(props: BoxProps) {
