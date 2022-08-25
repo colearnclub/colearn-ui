@@ -1,4 +1,4 @@
-import { Avatar, Box, Button } from '@chakra-ui/react';
+import { Avatar, Box } from '@chakra-ui/react';
 import * as Page from '../src/components/app/Page';
 import * as Sidebar from '../src/components/app/Sidebar';
 import * as Appbar from '../src/components/app/Appbar';
@@ -31,8 +31,8 @@ export function LayoutExample() {
             </Sidebar.CollapsibleContainer>
             <Appbar.Container>
               <Appbar.Inner>
+                <Sidebar.CollapsibleToggleButton />
                 <Appbar.TitleContainer>
-                  <Sidebar.CollapsibleToggleButton />
                   <Appbar.Title>Dashboard</Appbar.Title>
                   <Appbar.Subtitle>Our Family</Appbar.Subtitle>
                 </Appbar.TitleContainer>

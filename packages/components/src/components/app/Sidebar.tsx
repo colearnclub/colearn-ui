@@ -102,13 +102,15 @@ export function CollapsibleToggleButton(props: IconButtonProps) {
   const { onToggle } = useCollapsibleSidebar();
   return (
     <IconButton
-      {...props}
-      size="sm"
+      size="lg"
+      py="0.5rem"
+      outline="none"
       variant="link"
       display={{ base: 'block', md: 'none' }}
       onClick={onToggle}
       aria-label="toggle sidebar"
       icon={<HamburgerIcon />}
+      {...props}
     />
   );
 }
