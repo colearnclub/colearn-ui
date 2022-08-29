@@ -28,6 +28,7 @@ import * as MultiProgress from './components/common/MultiProgressBar';
 import Tag from './components/common/Tag';
 import IcontBtn from './components/common/IcontBtn';
 import { NavLink, NavLinks } from './components/common/NavLinks';
+import AppbarNavLinksMenu from './components/common/AppbarNavLinksMenu';
 import DateSelect from './components/common/DateSelect';
 import {
   AutocompleteTagsBase,
@@ -74,6 +75,7 @@ import {
   whyDidYouUpdate,
   useWhyDidYouUpdate,
 } from './components/hooks/whyDidYouUpdate';
+import useMatchPaths from './components/hooks/useMatchPaths';
 
 export {
   // app
@@ -105,6 +107,7 @@ export {
   MultiProgress,
   NavLink,
   NavLinks,
+  AppbarNavLinksMenu,
   TagsList,
   Tag,
   AutocompleteTagsBase,
@@ -132,6 +135,7 @@ export {
   useErrorToast,
   useSuccessToast,
   whyDidYouUpdate,
+  useMatchPaths,
   //hoc's
   useWhyDidYouUpdate,
   deferComponentRender,
