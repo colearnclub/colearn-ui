@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.3.2
+
+### Patch Changes
+
+- appbar navlinks
+
 ## 2.3.1
 
 ### Patch Changes
