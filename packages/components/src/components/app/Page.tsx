@@ -12,6 +12,7 @@ export function Main(props: BoxProps) {
       boxSizing="border-box"
       pl={{ base: 0, md: '5rem', '2xl': '10rem' }}
       minH="100vh"
+      minW="100vw"
       {...props}
       sx={{
         '@media print': {
