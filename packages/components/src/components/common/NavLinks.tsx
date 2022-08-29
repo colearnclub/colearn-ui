@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ForwardedRef, forwardRef, ReactNode } from 'react';
 import { Link as RNavLink, useMatch } from 'react-router-dom';
 
 import {
@@ -31,27 +31,26 @@ type Props = ChakraProps & {
   matchTo?: string;
 };
 
-const Container = chakra(RNavLink);
+const NavLinkContainer = chakra(RNavLink);
 
-export function NavLink({
-  children,
-  icon,
-  to,
-  matchTo,
-  end = true,
-  ...rest
-}: Props) {
-  const styles = useStyles();
-  const match = useMatch({ path: matchTo ?? to, end });
-  return (
-    <Container
-      __css={styles.link}
-      to={to}
-      className={match ? 'active' : ''}
-      {...rest}
-    >
-      {icon}
-      {children}
-    </Container>
-  );
-}
+export const NavLink = forwardRef(
+  (
+    { children, icon, to, matchTo, end = true, ...rest }: Props,
+    ref: ForwardedRef<HTMLAnchorElement | null>,
+  ) => {
+    const styles = useStyles();
+    const match = useMatch({ path: matchTo ?? to, end });
+    return (
+      <NavLinkContainer
+        ref={ref}
+        __css={styles.link}
+        to={to}
+        className={match ? 'active' : ''}
+        {...rest}
+      >
+        {icon}
+        {children}
+      </NavLinkContainer>
+    );
+  },
+);
