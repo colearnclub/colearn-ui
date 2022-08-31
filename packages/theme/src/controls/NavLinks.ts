@@ -169,6 +169,94 @@ const NavLinks = {
         },
       },
     },
+    'inner-accent': {
+      container: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      link: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        boxSizing: 'border-box',
+
+        color: '#61767b',
+        fontSize: '1rem',
+        lineHeight: '1',
+        fontWeight: 'normal',
+
+        minW: '10rem',
+        h: '3rem',
+        border: '2px solid #ccd5d7',
+        marginRight: '-2px',
+        svg: {
+          mr: '0.5rem',
+        },
+        _first: {
+          borderLeftRadius: '6px',
+        },
+        _last: {
+          borderRightRadius: '6px',
+        },
+        _hover: {
+          color: 'c-orange.200',
+          bg: 'white',
+          'svg g': {
+            stroke: 'c-orange.200',
+          },
+        },
+        '&.active': {
+          position: 'relative',
+          zIndex: '1',
+          fontWeight: '500',
+          color: 'c-orange.200',
+          borderColor: 'c-orange.200',
+          bg: 'white',
+          'svg g': {
+            stroke: 'c-orange.200',
+          },
+        },
+      },
+    },
+    'inner-accent2': {
+      container: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      link: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        boxSizing: 'border-box',
+
+        color: '#61767b',
+        fontSize: '0.875rem',
+        lineHeight: '1',
+        fontWeight: 'normal',
+
+        h: '2rem',
+        px: '1.5rem',
+        border: '1px solid #ccd5d7',
+        marginRight: '-1px',
+        _first: {
+          borderLeftRadius: '1rem',
+        },
+        _last: {
+          borderRightRadius: '1rem',
+        },
+        _hover: {
+          color: 'c-orange.200',
+        },
+        '&.active': {
+          position: 'relative',
+          zIndex: '1',
+          color: 'c-orange.200',
+          borderColor: 'c-orange.200',
+        },
+      },
+    },
   },
 };
 

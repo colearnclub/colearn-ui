@@ -20,6 +20,9 @@ import ResourceCard from './controls/ResourceCard';
 import Select from './controls/Select';
 import Tag from './controls/Tag';
 import WeekdayButton from './controls/WeekdayButton';
+import Appbar from './controls/Appbar';
+import Page from './controls/Page';
+import Table from './controls/Table';
 
 const controls = {
   AutocompleteTags,
@@ -44,6 +47,9 @@ const controls = {
   Select,
   Tag,
   WeekdayButton,
+  Appbar,
+  Page,
+  Table,
 };
 
 export default controls;

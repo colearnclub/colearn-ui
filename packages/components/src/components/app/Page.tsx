@@ -1,4 +1,10 @@
-import { Box, BoxProps } from '@chakra-ui/react';
+import {
+  Box,
+  BoxProps,
+  StylesProvider,
+  useMultiStyleConfig,
+  useStyles,
+} from '@chakra-ui/react';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 
 type Props = BoxProps & {
@@ -6,39 +12,33 @@ type Props = BoxProps & {
 };
 
 export function Main(props: BoxProps) {
+  const styles = useMultiStyleConfig('Page');
+
   return (
-    <Box
-      as="main"
-      boxSizing="border-box"
-      pl={{ base: 0, md: '5rem', '2xl': '10rem' }}
-      minH="100vh"
-      minW="100vw"
-      {...props}
-      sx={{
-        '@media print': {
-          display: 'none',
-        },
-      }}
-    />
+    <StylesProvider value={styles}>
+      <Box
+        as="main"
+        sx={{
+          '@media print': {
+            display: 'none',
+          },
+        }}
+        __css={styles.main}
+        {...props}
+      />
+    </StylesProvider>
   );
 }
 
 export function Container({ title, ...rest }: Props) {
+  const styles = useStyles();
   useDocumentTitle(title);
-  return <Box p="2rem" {...rest} />;
+  return <Box __css={styles.container} {...rest} />;
 }
 
 export function Content(props: BoxProps) {
-  return (
-    <Box
-      border="solid 1px #d3d3d3"
-      borderRadius="6px"
-      bg="white"
-      mx="auto"
-      maxW="110rem"
-      {...props}
-    />
-  );
+  const styles = useStyles();
+  return <Box __css={styles.content} {...props} />;
 }
 
 export function Title(props: BoxProps) {
