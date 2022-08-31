@@ -13,7 +13,6 @@ import IcontBtn from '../common/IcontBtn';
 
 export function Container(props: BoxProps) {
   const styles = useMultiStyleConfig('Appbar');
-  console.log(styles);
 
   return (
     <StylesProvider value={styles}>
