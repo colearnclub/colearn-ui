@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 2.3.0
+
+### Minor Changes
+
+- appbar & styles
+
 ## 2.2.0
 
 ### Minor Changes

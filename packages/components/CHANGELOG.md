@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.4.0
+
+### Minor Changes
+
+- appbar & styles
+
 ## 2.3.2
 
 ### Patch Changes
