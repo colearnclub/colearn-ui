@@ -1,35 +1,31 @@
 import {
   Box,
-  Flex,
   Link,
   BoxProps,
   FlexProps,
   ButtonProps,
   Tooltip,
+  StylesProvider,
+  useMultiStyleConfig,
+  useStyles,
 } from '@chakra-ui/react';
 import IcontBtn from '../common/IcontBtn';
 
 export function Container(props: BoxProps) {
+  const styles = useMultiStyleConfig('Appbar');
+
   return (
-    <Box
-      as="header"
-      bg="white"
-      height="3.125rem"
-      borderBottom="1px"
-      borderBottomColor="rgba(92, 164, 175, 0.15)"
-      zIndex={15}
-      {...props}
-    />
+    <StylesProvider value={styles}>
+      <Box as="header" __css={styles.container} {...props} />
+    </StylesProvider>
   );
 }
 
 export function Inner({ justifyContent, ...props }: FlexProps) {
+  const styles = useStyles();
   return (
-    <Flex
-      boxSizing="border-box"
-      px={{ base: '0.5rem', md: '1.25rem' }}
-      align="center"
-      h="100%"
+    <Box
+      __css={styles.inner}
       justifyContent={justifyContent || 'space-between'}
       {...props}
     />
