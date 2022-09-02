@@ -18,6 +18,18 @@ const Appbar = {
       h: '100%',
     },
   },
+  variants: {
+    fixed: {
+      container: {
+        pos: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '4.5rem',
+        borderBottomColor: '#ECEEEE',
+      },
+    },
+  },
 };
 
 export default Appbar;

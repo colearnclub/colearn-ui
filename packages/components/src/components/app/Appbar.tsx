@@ -11,8 +11,13 @@ import {
 } from '@chakra-ui/react';
 import IcontBtn from '../common/IcontBtn';
 
-export function Container(props: BoxProps) {
-  const styles = useMultiStyleConfig('Appbar');
+type Props = BoxProps & {
+  variant?: 'fixed';
+  value?: string;
+};
+
+export function Container({ variant, ...props }: Props) {
+  const styles = useMultiStyleConfig('Appbar', { variant });
 
   return (
     <StylesProvider value={styles}>
@@ -27,24 +32,6 @@ export function Inner({ justifyContent, ...props }: FlexProps) {
     <Box
       __css={styles.inner}
       justifyContent={justifyContent || 'space-between'}
-      {...props}
-    />
-  );
-}
-
-export function ContainerFixed(props: BoxProps) {
-  return (
-    <Box
-      as="header"
-      pos="fixed"
-      top="0"
-      left="0"
-      right="0"
-      bg="white"
-      height="4.5rem"
-      borderBottom="1px"
-      borderBottomColor="#ECEEEE"
-      zIndex={15}
       {...props}
     />
   );
