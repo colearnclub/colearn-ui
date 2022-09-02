@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.5.0
+
+### Minor Changes
+
+- fix container
+
 ## 2.4.0
 
 ### Minor Changes
