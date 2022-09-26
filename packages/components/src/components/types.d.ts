@@ -47,6 +47,8 @@ export type Person = {
   firstName?: Maybe<string>;
   id: string;
   lastName?: Maybe<string>;
+  email?: Maybe<string>;
+  userId?: Maybe<string>;
 };
 
 export type PersonMembership = {
