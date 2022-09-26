@@ -1,4 +1,4 @@
-import { Box, CloseButton, Flex, Skeleton } from '@chakra-ui/react';
+import { Box, CloseButton, Flex } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 import { Maybe, PersonMembership } from '../types';
 
@@ -8,7 +8,6 @@ type Props = {
   children?: ReactNode;
   value?: Maybe<PersonMembership>;
   isReadOnly?: boolean;
-  loading?: boolean;
   onSelect?: (person?: Maybe<PersonMembership>) => void;
 };
 
@@ -17,15 +16,10 @@ export default function MembersSelect({
   value,
   onSelect,
   isReadOnly,
-  loading,
 }: Props) {
   return (
     <>
-      {!value && (
-        <Box pb="1.5rem">
-          <Skeleton isLoaded={!loading}>{children}</Skeleton>
-        </Box>
-      )}
+      {!value && <Box pb="1.5rem">{children}</Box>}
       {value && (
         <Flex align="center" justify="space-between">
           <PersonCardBlock py="0.75rem" person={value?.person} />
