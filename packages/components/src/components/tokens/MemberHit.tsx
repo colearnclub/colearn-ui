@@ -2,14 +2,14 @@ import { memo } from 'react';
 import { Box, Avatar } from '@chakra-ui/react';
 
 import { avatarProps } from '../tokens/avatar';
-import { Maybe, Person } from '../types';
+import { Maybe, PersonMembership } from '../types';
 
-type PersonHitProps = {
-  hit: Maybe<Person>;
-  onSelect?: (person: Person | null) => void;
+type MemberHitProps = {
+  hit: Maybe<PersonMembership>;
+  onSelect?: (person: PersonMembership | null) => void;
 };
 
-export const PersonHit = memo(({ hit, onSelect }: PersonHitProps) => {
+export const MemberHit = memo(({ hit, onSelect }: MemberHitProps) => {
   const select = () => onSelect?.(hit);
   return (
     <Box
@@ -27,13 +27,13 @@ export const PersonHit = memo(({ hit, onSelect }: PersonHitProps) => {
       display="flex"
       alignItems="center"
     >
-      <Avatar {...avatarProps(hit)} mr="0.5rem" />
+      <Avatar {...avatarProps(hit?.person)} mr="0.5rem" />
       <Box>
         <Box>
-          {hit?.firstName} {hit?.lastName}
+          {hit?.person?.firstName} {hit?.person?.lastName}
         </Box>
         <Box fontSize="0.875rem" color="gray.600">
-          {hit?.email}
+          {hit?.person?.email}
         </Box>
       </Box>
     </Box>

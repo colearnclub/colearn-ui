@@ -11,23 +11,29 @@ import {
 
 import { SearchIcon } from '@chakra-ui/icons';
 
-import { PersonHit } from './PersonHit';
+import { MemberHit } from './MemberHit';
 
 import useDebouncedValue from '../hooks/useDebouncedValue';
-import { Maybe, Person } from '../types';
+import { Maybe, PersonMembership } from '../types';
+
+export function search(query: string, p?: Maybe<PersonMembership>) {
+  return (
+    (p?.person?.email?.toLocaleLowerCase()?.indexOf(query) ?? -1) >= 0 ||
+    (p?.person?.firstName?.toLocaleLowerCase()?.indexOf(query) ?? -1) >= 0 ||
+    (p?.person?.lastName?.toLocaleLowerCase()?.indexOf(query) ?? -1) >= 0 ||
+    `${p?.person?.userId}`.indexOf(query) >= 0
+  );
+}
 
 export type Props = Omit<InputGroupProps, 'onSelect'> & {
-  persons?: Maybe<Maybe<Person>[]>;
+  members?: Maybe<Maybe<PersonMembership>[]>;
   placeholder?: string;
-  onSelect?: (person: Person | null) => void;
-  onSearch: (v: string) => void;
+  onSelect?: (member: PersonMembership | null) => void;
 };
 
-export default function PersonAutoComplete({
-  persons,
+export default function MembersAutoComplete({
+  members,
   onSelect,
-  onSearch,
-  placeholder = 'Search by keyword',
   ...props
 }: Props) {
   const [value, refine] = useState('');
@@ -37,19 +43,23 @@ export default function PersonAutoComplete({
   );
   const debounced = useDebouncedValue(value, 250);
 
+  const [hits, setHits] = useState(members);
   useEffect(() => {
+    if (!members?.length) {
+      return;
+    }
     const query = debounced.toLocaleLowerCase().trim();
-    onSearch(query);
-  }, [debounced, onSearch]);
+    const filtered = query ? members?.filter((p) => search(query, p)) : members;
+    setHits(filtered.slice(0, 100));
+  }, [debounced, members]);
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const hits = persons?.slice(0, 100);
 
   return (
     <InputGroup pos="relative" {...props}>
       <Input
-        placeholder={placeholder}
-        aria-label={placeholder}
+        placeholder="Search by keyword"
+        aria-label="Search by keyword"
         role="combobox"
         aria-controls=""
         aria-autocomplete="list"
@@ -75,7 +85,7 @@ export default function PersonAutoComplete({
           zIndex={10}
         >
           {hits?.map((hit) => (
-            <PersonHit hit={hit} key={hit?.id} onSelect={onSelect} />
+            <MemberHit hit={hit} key={hit?.id} onSelect={onSelect} />
           ))}
         </Box>
       )}
