@@ -20,8 +20,7 @@ export function search(query: string, p?: Maybe<PersonMembership>) {
   return (
     (p?.person?.email?.toLocaleLowerCase()?.indexOf(query) ?? -1) >= 0 ||
     (p?.person?.firstName?.toLocaleLowerCase()?.indexOf(query) ?? -1) >= 0 ||
-    (p?.person?.lastName?.toLocaleLowerCase()?.indexOf(query) ?? -1) >= 0 ||
-    `${p?.person?.userId}`.indexOf(query) >= 0
+    (p?.person?.lastName?.toLocaleLowerCase()?.indexOf(query) ?? -1) >= 0
   );
 }
 

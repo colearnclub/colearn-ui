@@ -16,7 +16,6 @@ function getMembers(id) {
     person: {
       firstName: 'Name',
       id,
-      userId: id,
       lastName: 'Surname',
     },
   };
