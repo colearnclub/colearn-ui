@@ -59,6 +59,10 @@ import { useErrorToast, useSuccessToast } from './components/hooks/useToasts';
 import deferComponentRender from './components/hooks/deferComponentRender';
 import { randomColorFromList, colors, subjectColors } from './utils/colorUtils';
 
+import MembersSelect from './components/tokens/MembersSelect';
+import MembersAutoComplete from './components/tokens/MembersAutoComplete';
+import PersonCardBlock from './components/tokens/PersonCardBlock';
+
 import {
   linear as linearAnim,
   ease as easeAnim,
@@ -101,6 +105,9 @@ export {
   PersonTab,
   PersonDropdown,
   WeekdayButton,
+  MembersSelect,
+  MembersAutoComplete,
+  PersonCardBlock,
   // common
   DateSelect,
   IcontBtn,
