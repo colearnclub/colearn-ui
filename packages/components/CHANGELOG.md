@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.6.0
+
+### Minor Changes
+
+- members select
+
 ## 2.5.0
 
 ### Minor Changes

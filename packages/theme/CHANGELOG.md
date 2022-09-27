@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 2.5.0
+
+### Minor Changes
+
+- members select
+
 ## 2.4.0
 
 ### Minor Changes
