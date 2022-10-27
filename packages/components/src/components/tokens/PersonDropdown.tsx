@@ -28,7 +28,7 @@ type Props = Omit<MenuProps, 'onChange' | 'children'> & {
   onChange?: (id?: Maybe<string>) => void;
 };
 
-function defaultFormatter(m: Maybe<PersonMembership | undefined>): string {
+function defaultFormatter(m?: Maybe<PersonMembership>): string {
   return m?.person?.firstName ?? '';
 }
 
@@ -86,7 +86,7 @@ export default function PersonDropdown({
         {members?.map((m) => (
           <MenuItem key={m?.id} value={m?.personId} onClick={select}>
             <Avatar {...avatarProps(m?.person)} />
-            <AvatarLabel>{m?.person?.firstName}</AvatarLabel>
+            <AvatarLabel>{labelFormatter(m)}</AvatarLabel>
           </MenuItem>
         ))}
       </MenuList>
