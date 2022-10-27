@@ -24,12 +24,14 @@ type Props = Omit<MenuProps, 'onChange' | 'children'> & {
   clearButton?: boolean;
   placeholder?: string;
   menuButtonVariant?: string;
-  labelFormatter?: (m?: Maybe<PersonMembership>) => string;
+  labelFormatter?: (m?: Maybe<PersonMembership>) => Maybe<string> | undefined;
   onChange?: (id?: Maybe<string>) => void;
 };
 
-function defaultFormatter(m?: Maybe<PersonMembership>): string {
-  return m?.person?.firstName ?? '';
+function defaultFormatter(
+  m?: Maybe<PersonMembership>,
+): Maybe<string> | undefined {
+  return m?.person?.firstName;
 }
 
 export default function PersonDropdown({
