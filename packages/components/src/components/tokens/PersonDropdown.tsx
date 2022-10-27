@@ -24,7 +24,7 @@ type Props = Omit<MenuProps, 'onChange' | 'children'> & {
   clearButton?: boolean;
   placeholder?: string;
   menuButtonVariant?: string;
-  labelFormatter?: (m: Maybe<PersonMembership | undefined>) => string;
+  labelFormatter?: (m?: Maybe<PersonMembership>) => string;
   onChange?: (id?: Maybe<string>) => void;
 };
 
