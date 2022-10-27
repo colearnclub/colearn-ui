@@ -24,8 +24,15 @@ type Props = Omit<MenuProps, 'onChange' | 'children'> & {
   clearButton?: boolean;
   placeholder?: string;
   menuButtonVariant?: string;
+  labelFormatter?: (m?: Maybe<PersonMembership>) => Maybe<string> | undefined;
   onChange?: (id?: Maybe<string>) => void;
 };
+
+function defaultFormatter(
+  m?: Maybe<PersonMembership>,
+): Maybe<string> | undefined {
+  return m?.person?.firstName;
+}
 
 export default function PersonDropdown({
   value,
@@ -33,6 +40,7 @@ export default function PersonDropdown({
   clearButton,
   placeholder = 'Select',
   menuButtonVariant = 'dropdown-menu',
+  labelFormatter = defaultFormatter,
   onChange,
   ...rest
 }: Props) {
@@ -73,14 +81,14 @@ export default function PersonDropdown({
         }
       >
         <AvatarLabel ml="0">
-          {selected?.person?.firstName ?? placeholder}
+          {labelFormatter(selected) ?? placeholder}
         </AvatarLabel>
       </MenuButton>
       <MenuList defaultValue={value ?? undefined}>
         {members?.map((m) => (
           <MenuItem key={m?.id} value={m?.personId} onClick={select}>
             <Avatar {...avatarProps(m?.person)} />
-            <AvatarLabel>{m?.person?.firstName}</AvatarLabel>
+            <AvatarLabel>{labelFormatter(m)}</AvatarLabel>
           </MenuItem>
         ))}
       </MenuList>
