@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.6.1
+
+### Patch Changes
+
+- formatter for person dropdown
+
 ## 2.6.0
 
 ### Minor Changes
