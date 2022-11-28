@@ -7,7 +7,6 @@ const AutocompleteTags = {
       borderRadius: '0.25rem',
       pos: 'relative',
       px: '0.5rem',
-      pb: '0.25rem',
       border: '1px solid #e4e4e4',
       _focus: {
         borderColor: 'rgb(49, 130, 206)',
@@ -76,11 +75,11 @@ const AutocompleteTags = {
   sizes: {
     lg: {
       input: {
-        lineHeight: '2rem',
+        lineHeight: '2.375rem',
       },
       leftAddon: {
         h: '2rem',
-        lineHeight: '2rem',
+        lineHeight: '2.375rem',
       },
     },
     md: {
