@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.6.2
+
+### Patch Changes
+
+- fix line hright
+
 ## 2.6.1
 
 ### Patch Changes

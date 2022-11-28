@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 2.5.1
+
+### Patch Changes
+
+- fix line hright
+
 ## 2.5.0
 
 ### Minor Changes
