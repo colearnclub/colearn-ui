@@ -9,15 +9,17 @@ import {
 
 type Props = Omit<TagProps, 'onClick'> & {
   name: string;
+  id?: string;
   icon?: ReactElement;
   size?: 'md' | 'lg' | 'sm';
-  onClick?: (tag: string) => void;
+  onClick?: (tag: string, id?: string) => void;
   onDelete?: (tag: string) => void;
 };
 
 export default function Tag({
   size,
   name,
+  id,
   icon,
   onDelete,
   onClick,
@@ -28,9 +30,9 @@ export default function Tag({
       evt.preventDefault();
       evt.stopPropagation();
 
-      onClick?.(name);
+      onClick?.(name, id);
     },
-    [name, onClick],
+    [name, id, onClick],
   );
 
   const del = useCallback(
