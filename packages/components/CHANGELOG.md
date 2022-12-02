@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.6.3
+
+### Patch Changes
+
+- onclick id on tags
+
 ## 2.6.2
 
 ### Patch Changes
