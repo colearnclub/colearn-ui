@@ -7,7 +7,7 @@ import {
   TagCloseButton,
 } from '@chakra-ui/react';
 
-type Props = Omit<TagProps, 'onClick'> & {
+export type Props = Omit<TagProps, 'onClick'> & {
   name: string;
   id?: string;
   icon?: ReactElement;

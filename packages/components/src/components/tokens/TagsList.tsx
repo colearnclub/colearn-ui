@@ -5,15 +5,22 @@ type Props = {
   size?: 'md' | 'lg' | 'sm';
   tags?: Maybe<TagEntity[]>;
   invisible?: boolean;
+  onClick?: (tag: string, id?: string) => void;
+  onDelete?: (tag: string) => void;
 };
 
-export default function TagsList({ tags, size, invisible = false }: Props) {
+export default function TagsList({ tags, invisible = false, ...rest }: Props) {
   return (
     <>
       {tags
         ?.filter((t) => (!invisible && t.visible !== false) || invisible)
         ?.map((tag) => (
-          <Tag size={size} key={`${tag.category}-${tag.id}`} name={tag.name!} />
+          <Tag
+            key={`${tag.category}-${tag.id}`}
+            name={tag.name!}
+            id={tag?.id}
+            {...rest}
+          />
         ))}
     </>
   );
