@@ -129,6 +129,17 @@ const PlannerBlock = {
         stroke: 'white',
       },
     },
+    duration: {
+      display: 'flex',
+      alignItems: 'center',
+      junstifyContent: 'center',
+      flexDirection: 'row',
+      color: '#61767B',
+      fontSize: '0.75rem',
+      svg: {
+        marginRight: '0.3rem',
+      },
+    },
   },
 };
 
