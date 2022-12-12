@@ -130,7 +130,7 @@ const PlannerBlock = {
       },
     },
     duration: {
-      display: 'flex',
+      display: { base: 'none', xl: 'flex' },
       alignItems: 'center',
       junstifyContent: 'center',
       flexDirection: 'row',
