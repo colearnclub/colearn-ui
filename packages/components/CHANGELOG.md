@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.6.7
+
+### Patch Changes
+
+- fix theme
+
 ## 2.6.6
 
 ### Patch Changes
