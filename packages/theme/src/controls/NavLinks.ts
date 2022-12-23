@@ -134,6 +134,9 @@ const NavLinks = {
           'svg g': {
             stroke: 'c-orange.200',
           },
+          'svg path': {
+            stroke: 'c-orange.200',
+          },
         },
       },
     },
