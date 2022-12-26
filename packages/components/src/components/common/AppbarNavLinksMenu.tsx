@@ -1,7 +1,8 @@
+import { useMemo } from 'react';
+import { matchPath, useLocation } from 'react-router-dom';
 import { Menu, MenuList, MenuItem, MenuButton, Box } from '@chakra-ui/react';
 
 import { NavLink } from '../common/NavLinks';
-import useMatchPaths from '../hooks/useMatchPaths';
 
 import DiscloseIcon from '../../assets/disclose-down.svg';
 
@@ -17,7 +18,13 @@ type Props = {
 };
 
 export default function AppbarNavLinksMenu({ links }: Props) {
-  const matched = useMatchPaths(links);
+  let { pathname } = useLocation();
+
+  const matched = useMemo(
+    () => links?.find((p) => matchPath(p.matchTo || p.to, pathname)),
+    [links, pathname],
+  );
+
   return (
     <Menu isLazy placement="bottom-start" variant="appbar">
       <MenuButton aria-selected={true} ml="1rem">

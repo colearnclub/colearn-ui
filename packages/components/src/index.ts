@@ -79,7 +79,7 @@ import {
   whyDidYouUpdate,
   useWhyDidYouUpdate,
 } from './components/hooks/whyDidYouUpdate';
-import useMatchPaths from './components/hooks/useMatchPaths';
+import useMultipleMatch from './components/hooks/useMultipleMatch';
 
 export {
   // app
@@ -142,7 +142,7 @@ export {
   useErrorToast,
   useSuccessToast,
   whyDidYouUpdate,
-  useMatchPaths,
+  useMultipleMatch,
   //hoc's
   useWhyDidYouUpdate,
   deferComponentRender,
