@@ -1,5 +1,5 @@
 import { ForwardedRef, forwardRef, ReactNode } from 'react';
-import { Link as RNavLink, useMatch } from 'react-router-dom';
+import { Link as RNavLink } from 'react-router-dom';
 
 import {
   ChakraProps,
@@ -10,6 +10,8 @@ import {
   useMultiStyleConfig,
   useStyles,
 } from '@chakra-ui/react';
+
+import useMultipleMatch from '../hooks/useMultipleMatch';
 
 export function NavLinks({
   variant,
@@ -28,7 +30,7 @@ type Props = ChakraProps & {
   icon?: ReactNode;
   children?: ReactNode;
   end?: boolean;
-  matchTo?: string;
+  matchTo?: string | string[];
 };
 
 const NavLinkContainer = chakra(RNavLink);
@@ -39,7 +41,7 @@ export const NavLink = forwardRef(
     ref: ForwardedRef<HTMLAnchorElement | null>,
   ) => {
     const styles = useStyles();
-    const match = useMatch({ path: matchTo ?? to, end });
+    const match = useMultipleMatch({ matchTo, path: to, end });
     return (
       <NavLinkContainer
         ref={ref}
