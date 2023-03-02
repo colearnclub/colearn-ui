@@ -18,6 +18,13 @@ const WeekdayButton = {
     outline: {
       border: '1px solid #e4e4e4',
     },
+    outline2: {
+      _selected: {
+        bg: 'white',
+        color: 'c-orange.200',
+        border: '1px solid #ee682a',
+      },
+    },
   },
   sizes: {
     md: {
