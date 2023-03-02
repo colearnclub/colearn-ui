@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.6.10
+
+### Patch Changes
+
+- fix
+
 ## 2.6.9
 
 ### Patch Changes
