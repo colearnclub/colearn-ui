@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 2.5.4
+
+### Patch Changes
+
+- fix theme
+
 ## 2.5.3
 
 ### Patch Changes
