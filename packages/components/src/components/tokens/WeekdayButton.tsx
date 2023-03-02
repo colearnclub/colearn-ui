@@ -2,7 +2,7 @@ import { BoxProps, Box, useStyleConfig, ThemingProps } from '@chakra-ui/react';
 
 type Props = BoxProps & {
   size?: 'md' | 'lg';
-  variant?: 'default' | 'outline';
+  variant?: 'default' | 'outline' | 'outline2';
   value?: string;
 };
 
