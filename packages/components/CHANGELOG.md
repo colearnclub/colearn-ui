@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.7.0
+
+### Minor Changes
+
+- blocks redesign
+
 ## 2.6.10
 
 ### Patch Changes

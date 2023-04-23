@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 2.6.0
+
+### Minor Changes
+
+- blocks redesign
+
 ## 2.5.5
 
 ### Patch Changes
