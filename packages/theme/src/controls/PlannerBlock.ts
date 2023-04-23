@@ -137,7 +137,7 @@ const PlannerBlock = {
       },
     },
     duration: {
-      display: { base: 'none', xl: 'flex' },
+      display: 'flex',
       alignItems: 'center',
       junstifyContent: 'center',
       flexDirection: 'row',
