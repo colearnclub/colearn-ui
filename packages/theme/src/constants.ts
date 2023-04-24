@@ -1,1 +1,1 @@
-export const colW = `${100 / 5}%`;
+export const colW = `${100 / 7}%`;
