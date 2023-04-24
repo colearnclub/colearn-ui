@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 2.6.1
+
+### Patch Changes
+
+- fix
+
 ## 2.6.0
 
 ### Minor Changes
