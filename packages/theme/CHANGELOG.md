@@ -1,5 +1,11 @@
 # @colearn/theme
 
+## 2.6.2
+
+### Patch Changes
+
+- modal theme
+
 ## 2.6.1
 
 ### Patch Changes

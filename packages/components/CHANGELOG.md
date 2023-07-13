@@ -1,5 +1,11 @@
 # @colearn/components
 
+## 2.7.2
+
+### Patch Changes
+
+- modal theme
+
 ## 2.7.1
 
 ### Patch Changes

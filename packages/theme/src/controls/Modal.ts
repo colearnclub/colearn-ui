@@ -61,7 +61,28 @@ const Modal = {
         },
       },
     },
+    journey: {
+      closeButton: {
+        top: '1rem',
+      },
+      header: {
+        pos: 'sticky',
+        top: 0,
+        zIndex: 1,
+        bg: 'white',
+      },
+      body: {
+        margin: '0 auto 4rem',
+      },
+      footer: {
+        pos: 'fixed',
+        bottom: 0,
+        w: '100%',
+        zIndex: 1,
+      },
+    },
   },
+
   defaultProps: {
     variant: 'gradient',
   },
