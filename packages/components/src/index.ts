@@ -27,7 +27,7 @@ import WeekdayButton from './components/tokens/WeekdayButton';
 import * as MultiProgress from './components/common/MultiProgressBar';
 import Tag from './components/common/Tag';
 import IcontBtn from './components/common/IcontBtn';
-import { NavLink, NavLinks } from './components/common/NavLinks';
+import { NavLink, NavLinks, NavLinkItem } from './components/common/NavLinks';
 import AppbarNavLinksMenu from './components/common/AppbarNavLinksMenu';
 import DateSelect from './components/common/DateSelect';
 import {
@@ -113,6 +113,7 @@ export {
   IcontBtn,
   MultiProgress,
   NavLink,
+  NavLinkItem,
   NavLinks,
   AppbarNavLinksMenu,
   TagsList,
