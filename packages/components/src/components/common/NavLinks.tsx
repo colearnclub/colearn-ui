@@ -2,10 +2,8 @@ import { ForwardedRef, forwardRef, ReactNode } from 'react';
 import { Link as RNavLink } from 'react-router-dom';
 
 import {
-  ChakraProps,
   Box,
   BoxProps,
-  chakra,
   StylesProvider,
   useMultiStyleConfig,
   useStyles,
@@ -16,7 +14,15 @@ import useMultipleMatch from '../hooks/useMultipleMatch';
 export function NavLinks({
   variant,
   ...props
-}: { variant: 'appbar' | 'sidebar' | 'inner' | 'inner-sidebar' } & BoxProps) {
+}: {
+  variant:
+    | 'appbar'
+    | 'sidebar'
+    | 'inner'
+    | 'inner-sidebar'
+    | 'inner-accent'
+    | 'inner-accent2';
+} & BoxProps) {
   const styles = useMultiStyleConfig('NavLinks', { variant });
   return (
     <StylesProvider value={styles}>
@@ -25,34 +31,49 @@ export function NavLinks({
   );
 }
 
-type Props = ChakraProps & {
+export const NavLinkItem = forwardRef(
+  (
+    { children, isActive, ...rest }: { isActive?: boolean } & BoxProps,
+    ref: ForwardedRef<HTMLDivElement | null>,
+  ) => {
+    const styles = useStyles();
+    return (
+      <Box
+        ref={ref}
+        as={rest.as ?? 'a'}
+        className={isActive ? 'active' : ''}
+        __css={styles.link}
+        {...rest}
+      >
+        {children}
+      </Box>
+    );
+  },
+);
+
+type NavLinkProps = BoxProps & {
   to: string;
   icon?: ReactNode;
-  children?: ReactNode;
   end?: boolean;
   matchTo?: string | string[];
 };
 
-const NavLinkContainer = chakra(RNavLink);
-
 export const NavLink = forwardRef(
   (
-    { children, icon, to, matchTo, end = true, ...rest }: Props,
-    ref: ForwardedRef<HTMLAnchorElement | null>,
+    { children, icon, to, matchTo, end = true, ...rest }: NavLinkProps,
+    ref: ForwardedRef<HTMLDivElement | null>,
   ) => {
-    const styles = useStyles();
     const match = useMultipleMatch({ matchTo, path: to, end });
     return (
-      <NavLinkContainer
+      <NavLinkItem
         ref={ref}
-        __css={styles.link}
-        to={to}
-        className={match ? 'active' : ''}
-        {...rest}
+        as={RNavLink}
+        isActive={!!match}
+        {...{ to, ...rest }}
       >
         {icon}
         {children}
-      </NavLinkContainer>
+      </NavLinkItem>
     );
   },
 );

@@ -75,7 +75,7 @@ const Modal = {
         margin: '0 auto 4rem',
       },
       footer: {
-        pos: 'fixed',
+        position: 'fixed',
         bottom: 0,
         w: '100%',
         zIndex: 1,
