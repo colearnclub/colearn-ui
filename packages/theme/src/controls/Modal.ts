@@ -68,7 +68,7 @@ const Modal = {
       header: {
         pos: 'sticky',
         top: 0,
-        zIndex: 1,
+        zIndex: 2,
         bg: 'white',
       },
       body: {
